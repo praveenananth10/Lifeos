@@ -80,8 +80,12 @@ export const Sidebar: React.FC<SidebarProps> = ({ className, onCloseMobile }) =>
             onClick={onCloseMobile}
             className="flex items-center gap-2.5 group"
           >
-            <div className="relative flex h-8 w-8 items-center justify-center rounded-lg bg-zinc-900 dark:bg-zinc-100 text-white dark:text-zinc-950 shadow-xs group-hover:scale-105 transition-transform">
-              <span className="font-semibold text-xs tracking-tighter">OS</span>
+            <div className="relative flex h-8 w-8 items-center justify-center shrink-0">
+              <img
+                src="/icon.png"
+                alt="LifeOS Logo"
+                className="h-8 w-8 rounded-lg object-cover shadow-2xs group-hover:scale-105 transition-transform"
+              />
               <span className="absolute -top-0.5 -right-0.5 flex h-2 w-2">
                 <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-indigo-400 opacity-75" />
                 <span className="relative inline-flex rounded-full h-2 w-2 bg-indigo-600 dark:bg-indigo-400" />

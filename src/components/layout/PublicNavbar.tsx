@@ -29,8 +29,12 @@ export const PublicNavbar: React.FC = () => {
       <div className="max-w-7xl mx-auto flex h-16 items-center justify-between px-4 sm:px-6 lg:px-8">
         {/* Brand identity */}
         <Link to="/" className="flex items-center gap-3 group">
-          <div className="relative flex h-8 w-8 items-center justify-center rounded-lg bg-zinc-900 dark:bg-zinc-100 text-white dark:text-zinc-950 shadow-xs transition-transform duration-200 group-hover:scale-105">
-            <span className="font-semibold text-xs tracking-tighter">OS</span>
+          <div className="relative flex h-8 w-8 items-center justify-center shrink-0">
+            <img
+              src="/icon.png"
+              alt="LifeOS Logo"
+              className="h-8 w-8 rounded-lg object-cover shadow-xs transition-transform duration-200 group-hover:scale-105"
+            />
             <span className="absolute -top-0.5 -right-0.5 flex h-2 w-2">
               <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-indigo-400 opacity-75" />
               <span className="relative inline-flex rounded-full h-2 w-2 bg-indigo-600 dark:bg-indigo-400" />

@@ -35,9 +35,11 @@ export const AuthLayout: React.FC<AuthLayoutProps> = ({
 
         <div className="flex items-center gap-3">
           <Link to="/" className="flex items-center gap-2">
-            <div className="h-7 w-7 rounded-lg bg-zinc-900 dark:bg-zinc-100 text-white dark:text-zinc-950 flex items-center justify-center font-bold text-xs shadow-xs">
-              OS
-            </div>
+            <img
+              src="/icon.png"
+              alt="LifeOS Logo"
+              className="h-7 w-7 rounded-lg object-cover shadow-xs"
+            />
             <span className="font-semibold text-sm tracking-tight text-zinc-900 dark:text-zinc-100 hidden sm:inline">
               LifeOS
             </span>

@@ -11,9 +11,11 @@ export const Navbar: React.FC = () => {
       <div className="max-w-7xl mx-auto flex h-14 items-center justify-between px-4 sm:px-6">
         {/* Brand identity */}
         <Link to="/" className="flex items-center gap-3 group">
-          <div className="flex h-8 w-8 items-center justify-center rounded-lg bg-zinc-900 text-white dark:bg-zinc-100 dark:text-zinc-950 shadow-xs group-hover:scale-105 transition-transform">
-            <span className="font-semibold text-sm tracking-tighter">OS</span>
-          </div>
+          <img
+            src="/icon.png"
+            alt="LifeOS Logo"
+            className="h-8 w-8 rounded-lg object-cover shadow-xs group-hover:scale-105 transition-transform"
+          />
           <div className="flex items-center gap-2">
             <span className="font-semibold text-base tracking-tight text-zinc-900 dark:text-zinc-100">
               LifeOS
