@@ -12,7 +12,6 @@ import {
   Sparkles, 
   Settings, 
   LogOut, 
-  Layers,
   X
 } from 'lucide-react';
 import { useAuth } from '../../hooks/useAuth';
@@ -185,10 +184,10 @@ export const Sidebar: React.FC<SidebarProps> = ({ className, onCloseMobile }) =>
           </nav>
         </div>
 
-        {/* Section 3: Intelligence & System */}
+        {/* Section 3: Intelligence & Settings */}
         <div className="space-y-1">
           <p className="px-2.5 pb-1.5 text-[10px] font-semibold uppercase tracking-wider text-zinc-400 dark:text-zinc-500">
-            Intelligence &amp; Specs
+            Intelligence &amp; Settings
           </p>
           <nav className="space-y-0.5">
             {/* AI Assistant Nav Link */}
@@ -211,25 +210,6 @@ export const Sidebar: React.FC<SidebarProps> = ({ className, onCloseMobile }) =>
               <Badge variant="indigo" className="text-[9px] px-1.5 py-0 font-medium">
                 Coach
               </Badge>
-            </NavLink>
-
-            {/* Design System Spec Link */}
-            <NavLink
-              to="/design-system"
-              onClick={onCloseMobile}
-              className={({ isActive }) =>
-                cn(
-                  'flex items-center justify-between px-2.5 py-1.5 rounded-lg text-xs font-medium transition-all duration-150',
-                  isActive
-                    ? 'bg-zinc-200/80 text-zinc-900 dark:bg-zinc-800 dark:text-zinc-100 font-semibold'
-                    : 'text-zinc-500 hover:text-zinc-900 hover:bg-zinc-100 dark:text-zinc-400 dark:hover:text-zinc-200 dark:hover:bg-zinc-900/60'
-                )
-              }
-            >
-              <div className="flex items-center gap-2.5">
-                <Layers className="h-4 w-4 shrink-0 text-amber-500" />
-                <span>Design System</span>
-              </div>
             </NavLink>
 
             {/* Settings */}
