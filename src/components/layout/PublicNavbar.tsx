@@ -31,7 +31,7 @@ export const PublicNavbar: React.FC = () => {
         <Link to="/" className="flex items-center gap-3 group">
           <div className="relative flex h-8 w-8 items-center justify-center shrink-0">
             <img
-              src="/icon.png"
+              src="/icon.png?v=2"
               alt="LifeOS Logo"
               className="h-8 w-8 rounded-lg object-cover shadow-xs transition-transform duration-200 group-hover:scale-105"
             />

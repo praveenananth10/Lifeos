@@ -82,7 +82,7 @@ export const Sidebar: React.FC<SidebarProps> = ({ className, onCloseMobile }) =>
           >
             <div className="relative flex h-8 w-8 items-center justify-center shrink-0">
               <img
-                src="/icon.png"
+                src="/icon.png?v=2"
                 alt="LifeOS Logo"
                 className="h-8 w-8 rounded-lg object-cover shadow-2xs group-hover:scale-105 transition-transform"
               />

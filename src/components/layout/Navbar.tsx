@@ -12,7 +12,7 @@ export const Navbar: React.FC = () => {
         {/* Brand identity */}
         <Link to="/" className="flex items-center gap-3 group">
           <img
-            src="/icon.png"
+            src="/icon.png?v=2"
             alt="LifeOS Logo"
             className="h-8 w-8 rounded-lg object-cover shadow-xs group-hover:scale-105 transition-transform"
           />

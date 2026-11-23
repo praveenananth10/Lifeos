@@ -36,7 +36,7 @@ export const AuthLayout: React.FC<AuthLayoutProps> = ({
         <div className="flex items-center gap-3">
           <Link to="/" className="flex items-center gap-2">
             <img
-              src="/icon.png"
+              src="/icon.png?v=2"
               alt="LifeOS Logo"
               className="h-7 w-7 rounded-lg object-cover shadow-xs"
             />
