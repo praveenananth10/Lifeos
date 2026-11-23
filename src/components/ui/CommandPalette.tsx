@@ -395,7 +395,7 @@ const CommandPaletteModal: React.FC<CommandPaletteModalProps> = ({ onClose }) =>
                       className={cn(
                         'w-8 h-8 rounded-lg flex items-center justify-center shrink-0 border transition-colors',
                         isSelected
-                          ? 'bg-indigo-600 text-white border-indigo-600 shadow-sm shadow-indigo-500/20'
+                          ? 'bg-orange-600 text-white border-orange-600 shadow-sm shadow-orange-500/20'
                           : 'bg-zinc-100 dark:bg-zinc-800 text-zinc-500 dark:text-zinc-400 border-zinc-200 dark:border-zinc-700/60'
                       )}
                     >
@@ -432,7 +432,7 @@ const CommandPaletteModal: React.FC<CommandPaletteModalProps> = ({ onClose }) =>
                       </kbd>
                     )}
                     {isSelected && (
-                      <ArrowRight className="h-3.5 w-3.5 text-indigo-600 dark:text-indigo-400" />
+                      <ArrowRight className="h-3.5 w-3.5 text-orange-600 dark:text-orange-400" />
                     )}
                   </div>
                 </div>

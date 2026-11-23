@@ -10,11 +10,11 @@ export const Card = React.forwardRef<HTMLDivElement, CardProps>(
   ({ className, variant = 'default', interactive = false, ...props }, ref) => {
     const variants = {
       default:
-        'bg-white dark:bg-zinc-900/90 border border-zinc-200/80 dark:border-zinc-800/80 shadow-2xs',
+        'bg-white dark:bg-[#121215] border border-zinc-200/80 dark:border-[#27272A] shadow-2xs',
       elevated:
-        'bg-white dark:bg-zinc-900 border border-zinc-200/60 dark:border-zinc-800 shadow-sm hover:shadow-md transition-shadow',
+        'bg-white dark:bg-[#121215] border border-zinc-200/60 dark:border-[#27272A] shadow-sm hover:shadow-md transition-shadow',
       subtle:
-        'bg-zinc-50/60 dark:bg-zinc-900/50 border border-zinc-200/50 dark:border-zinc-850',
+        'bg-zinc-50/60 dark:bg-[#121215]/80 border border-zinc-200/50 dark:border-[#27272A]',
     };
 
     return (

@@ -49,14 +49,14 @@ export const CircularTimer: React.FC<CircularTimerProps> = ({
   const formattedTime = `${String(mins).padStart(2, '0')}:${String(secs).padStart(2, '0')}`;
 
   const modeColors = {
-    pomodoro: 'stroke-indigo-600 dark:stroke-indigo-500 text-indigo-600 dark:text-indigo-400',
+    pomodoro: 'stroke-orange-600 dark:stroke-orange-500 text-orange-600 dark:text-orange-400',
     shortBreak: 'stroke-emerald-500 text-emerald-600 dark:text-emerald-400',
     longBreak: 'stroke-sky-500 text-sky-600 dark:text-sky-400',
     custom: 'stroke-purple-600 dark:stroke-purple-500 text-purple-600 dark:text-purple-400',
   };
 
   const modeBadgeVariant = {
-    pomodoro: 'indigo' as const,
+    pomodoro: 'orange' as const,
     shortBreak: 'success' as const,
     longBreak: 'info' as const,
     custom: 'secondary' as const,

@@ -64,7 +64,7 @@ const EditBudgetForm: React.FC<EditBudgetFormProps> = ({ currentBudget, onSave, 
               key={amount}
               type="button"
               onClick={() => setPreset(amount)}
-              className="py-1.5 text-xs font-mono font-medium rounded-lg border border-zinc-200 dark:border-zinc-800 hover:border-indigo-500 bg-zinc-50 dark:bg-zinc-900 text-zinc-700 dark:text-zinc-300 cursor-pointer"
+              className="py-1.5 text-xs font-mono font-medium rounded-lg border border-zinc-200 dark:border-zinc-800 hover:border-orange-500 bg-zinc-50 dark:bg-zinc-900 text-zinc-700 dark:text-zinc-300 cursor-pointer"
             >
               ${amount.toLocaleString()}
             </button>

@@ -4,10 +4,17 @@
 
 @theme {
   --font-sans: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+  --color-carbon-black: #09090b;
+  --color-charcoal-elevated: #121215;
+  --color-charcoal-card: #121215;
+  --color-charcoal-border: #27272a;
+  --color-orange-primary: #f97316;
+  --color-orange-hover: #ea580c;
+  --color-amber-glow: #fb923c;
 }
 
 :root {
-  /* Linear Slate & Indigo Light Palette */
+  /* Sleek Orange & Slate Light Palette */
   --bg-app: #fafafa;
   --surface-primary: #ffffff;
   --surface-secondary: #f4f4f5;
@@ -15,12 +22,13 @@
   --text-primary: #18181b;
   --text-secondary: #71717a;
   --text-muted: #a1a1aa;
-  --brand-primary: #4f46e5;
-  --brand-hover: #4338ca;
+  --brand-primary: #f97316;
+  --brand-hover: #ea580c;
+  --brand-glow: #fb923c;
 }
 
 .dark {
-  /* Linear Slate & Indigo Dark Palette */
+  /* Sleek Orange & Deep Carbon Black Palette */
   --bg-app: #09090b;
   --surface-primary: #121215;
   --surface-secondary: #18181b;
@@ -28,8 +36,9 @@
   --text-primary: #fafafa;
   --text-secondary: #a1a1aa;
   --text-muted: #71717a;
-  --brand-primary: #6366f1;
-  --brand-hover: #4f46e5;
+  --brand-primary: #f97316;
+  --brand-hover: #ea580c;
+  --brand-glow: #fb923c;
 }
 
 html {
@@ -71,11 +80,11 @@ body {
 }
 
 ::selection {
-  background-color: #4f46e5;
+  background-color: #ea580c;
   color: #ffffff;
 }
 
 .dark ::selection {
-  background-color: #6366f1;
-  color: #ffffff;
+  background-color: #f97316;
+  color: #09090b;
 }

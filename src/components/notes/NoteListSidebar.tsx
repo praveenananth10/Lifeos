@@ -41,7 +41,7 @@ export const NoteListSidebar: React.FC<NoteListSidebarProps> = ({
             placeholder="Search notes &amp; journals..."
             value={searchQuery}
             onChange={(e) => onSearchQueryChange(e.target.value)}
-            className="w-full h-8 pl-8 pr-3 text-xs rounded-lg bg-white dark:bg-zinc-900 border border-zinc-200/90 dark:border-zinc-800 text-zinc-900 dark:text-zinc-100 placeholder:text-zinc-400 focus:outline-none focus:border-indigo-500"
+            className="w-full h-8 pl-8 pr-3 text-xs rounded-lg bg-white dark:bg-zinc-900 border border-zinc-200/90 dark:border-zinc-800 text-zinc-900 dark:text-zinc-100 placeholder:text-zinc-400 focus:outline-none focus:border-orange-500"
           />
         </div>
 
@@ -110,7 +110,7 @@ export const NoteListSidebar: React.FC<NoteListSidebarProps> = ({
                 className={cn(
                   'p-3.5 rounded-xl border text-left transition-all cursor-pointer select-none',
                   isSelected
-                    ? 'border-indigo-500 bg-indigo-50/20 dark:bg-indigo-950/30 shadow-xs'
+                    ? 'border-orange-500 bg-orange-50/20 dark:bg-orange-950/30 shadow-xs'
                     : 'border-zinc-200/80 dark:border-zinc-800 bg-white dark:bg-zinc-900 hover:border-zinc-300 dark:hover:border-zinc-700 shadow-2xs'
                 )}
               >
@@ -123,7 +123,7 @@ export const NoteListSidebar: React.FC<NoteListSidebarProps> = ({
                       className={cn(
                         'text-xs font-semibold truncate',
                         isSelected
-                          ? 'text-indigo-600 dark:text-indigo-400'
+                          ? 'text-orange-600 dark:text-orange-400'
                           : 'text-zinc-900 dark:text-zinc-100'
                       )}
                     >

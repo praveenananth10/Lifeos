@@ -166,7 +166,7 @@ export const TasksPage: React.FC = () => {
       <div className="flex flex-col sm:flex-row sm:items-center sm:justify-between gap-4 pb-4 border-b border-zinc-200/60 dark:border-zinc-800/60">
         <div>
           <div className="flex items-center gap-2">
-            <div className="h-8 w-8 rounded-lg bg-indigo-50 dark:bg-indigo-950/60 text-indigo-600 dark:text-indigo-400 flex items-center justify-center">
+            <div className="h-8 w-8 rounded-lg bg-orange-50 dark:bg-orange-950/60 text-orange-600 dark:text-orange-400 flex items-center justify-center">
               <CheckSquare className="h-4 w-4" />
             </div>
             <h1 className="text-xl sm:text-2xl font-bold tracking-tight text-zinc-900 dark:text-zinc-50">
@@ -201,7 +201,7 @@ export const TasksPage: React.FC = () => {
 
         <div className="p-3 rounded-xl border border-zinc-200/80 dark:border-zinc-800 bg-white dark:bg-zinc-900/50 shadow-2xs">
           <div className="text-[11px] font-medium text-zinc-500 dark:text-zinc-400">Pending</div>
-          <div className="text-xl font-bold font-mono text-indigo-600 dark:text-indigo-400 mt-1">
+          <div className="text-xl font-bold font-mono text-orange-600 dark:text-orange-400 mt-1">
             {pendingTasksCount}
           </div>
         </div>
@@ -243,7 +243,7 @@ export const TasksPage: React.FC = () => {
                   handleQuickAdd();
                 }
               }}
-              className="w-full h-9 rounded-lg px-3 text-xs bg-white dark:bg-zinc-900 border border-zinc-200/90 dark:border-zinc-800 text-zinc-900 dark:text-zinc-100 placeholder:text-zinc-400 focus:outline-none focus:border-indigo-500"
+              className="w-full h-9 rounded-lg px-3 text-xs bg-white dark:bg-zinc-900 border border-zinc-200/90 dark:border-zinc-800 text-zinc-900 dark:text-zinc-100 placeholder:text-zinc-400 focus:outline-none focus:border-orange-500"
             />
           </div>
 
@@ -252,7 +252,7 @@ export const TasksPage: React.FC = () => {
             <select
               value={quickCategory}
               onChange={(e) => setQuickCategory(e.target.value as TaskCategory)}
-              className="h-9 rounded-lg px-2.5 text-xs bg-white dark:bg-zinc-900 border border-zinc-200/90 dark:border-zinc-800 text-zinc-800 dark:text-zinc-200 focus:outline-none focus:border-indigo-500"
+              className="h-9 rounded-lg px-2.5 text-xs bg-white dark:bg-zinc-900 border border-zinc-200/90 dark:border-zinc-800 text-zinc-800 dark:text-zinc-200 focus:outline-none focus:border-orange-500"
             >
               {(CATEGORIES.filter((c) => c !== 'All') as TaskCategory[]).map((cat) => (
                 <option key={cat} value={cat}>
@@ -265,7 +265,7 @@ export const TasksPage: React.FC = () => {
             <select
               value={quickPriority}
               onChange={(e) => setQuickPriority(e.target.value as TaskPriority)}
-              className="h-9 rounded-lg px-2.5 text-xs bg-white dark:bg-zinc-900 border border-zinc-200/90 dark:border-zinc-800 text-zinc-800 dark:text-zinc-200 focus:outline-none focus:border-indigo-500"
+              className="h-9 rounded-lg px-2.5 text-xs bg-white dark:bg-zinc-900 border border-zinc-200/90 dark:border-zinc-800 text-zinc-800 dark:text-zinc-200 focus:outline-none focus:border-orange-500"
             >
               <option value="low">Low</option>
               <option value="medium">Medium</option>
@@ -277,7 +277,7 @@ export const TasksPage: React.FC = () => {
               type="date"
               value={quickDueDate}
               onChange={(e) => setQuickDueDate(e.target.value)}
-              className="h-9 rounded-lg px-2.5 text-xs bg-white dark:bg-zinc-900 border border-zinc-200/90 dark:border-zinc-800 text-zinc-800 dark:text-zinc-200 focus:outline-none focus:border-indigo-500"
+              className="h-9 rounded-lg px-2.5 text-xs bg-white dark:bg-zinc-900 border border-zinc-200/90 dark:border-zinc-800 text-zinc-800 dark:text-zinc-200 focus:outline-none focus:border-orange-500"
             />
 
             <Button
@@ -333,7 +333,7 @@ export const TasksPage: React.FC = () => {
                 placeholder="Search tasks..."
                 value={searchQuery}
                 onChange={(e) => setSearchQuery(e.target.value)}
-                className="w-full h-8 pl-8 pr-3 text-xs rounded-lg bg-white dark:bg-zinc-900 border border-zinc-200/90 dark:border-zinc-800 text-zinc-900 dark:text-zinc-100 placeholder:text-zinc-400 focus:outline-none focus:border-indigo-500"
+                className="w-full h-8 pl-8 pr-3 text-xs rounded-lg bg-white dark:bg-zinc-900 border border-zinc-200/90 dark:border-zinc-800 text-zinc-900 dark:text-zinc-100 placeholder:text-zinc-400 focus:outline-none focus:border-orange-500"
               />
             </div>
 
@@ -343,7 +343,7 @@ export const TasksPage: React.FC = () => {
               <select
                 value={sortBy}
                 onChange={(e) => setSortBy(e.target.value as SortOption)}
-                className="h-8 rounded-lg px-2 text-xs bg-white dark:bg-zinc-900 border border-zinc-200/90 dark:border-zinc-800 text-zinc-700 dark:text-zinc-300 focus:outline-none focus:border-indigo-500"
+                className="h-8 rounded-lg px-2 text-xs bg-white dark:bg-zinc-900 border border-zinc-200/90 dark:border-zinc-800 text-zinc-700 dark:text-zinc-300 focus:outline-none focus:border-orange-500"
               >
                 <option value="dueDate">Due Date</option>
                 <option value="priority">Priority</option>
@@ -362,7 +362,7 @@ export const TasksPage: React.FC = () => {
               <select
                 value={groupBy}
                 onChange={(e) => setGroupBy(e.target.value as GroupOption)}
-                className="h-8 rounded-lg px-2 text-xs bg-white dark:bg-zinc-900 border border-zinc-200/90 dark:border-zinc-800 text-zinc-700 dark:text-zinc-300 focus:outline-none focus:border-indigo-500"
+                className="h-8 rounded-lg px-2 text-xs bg-white dark:bg-zinc-900 border border-zinc-200/90 dark:border-zinc-800 text-zinc-700 dark:text-zinc-300 focus:outline-none focus:border-orange-500"
               >
                 <option value="none">Flat List</option>
                 <option value="category">Group by Category</option>

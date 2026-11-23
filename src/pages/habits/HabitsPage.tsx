@@ -114,22 +114,22 @@ export const HabitsPage: React.FC = () => {
             <span className="text-xs font-medium text-zinc-500 dark:text-zinc-400">
               Weekly Consistency %
             </span>
-            <div className="h-7 w-7 rounded-lg bg-indigo-50 dark:bg-indigo-950/50 text-indigo-600 dark:text-indigo-400 flex items-center justify-center">
+            <div className="h-7 w-7 rounded-lg bg-orange-50 dark:bg-orange-950/50 text-orange-600 dark:text-orange-400 flex items-center justify-center">
               <TrendingUp className="h-3.5 w-3.5" />
             </div>
           </div>
           <div className="mt-3">
             <div className="flex items-baseline gap-2">
-              <span className="text-2xl font-bold font-mono text-indigo-600 dark:text-indigo-400">
+              <span className="text-2xl font-bold font-mono text-orange-600 dark:text-orange-400">
                 {weeklyConsistencyPercent}%
               </span>
-              <Badge variant="indigo" className="text-[10px]">
+              <Badge variant="orange" className="text-[10px]">
                 Current Week
               </Badge>
             </div>
             <div className="h-1.5 w-full bg-zinc-100 dark:bg-zinc-800 rounded-full mt-2 overflow-hidden">
               <div
-                className="h-full bg-indigo-600 dark:bg-indigo-500 rounded-full transition-all duration-300"
+                className="h-full bg-orange-600 dark:bg-orange-500 rounded-full transition-all duration-300"
                 style={{ width: `${weeklyConsistencyPercent}%` }}
               />
             </div>

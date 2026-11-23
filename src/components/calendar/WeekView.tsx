@@ -37,7 +37,7 @@ export const WeekView: React.FC<WeekViewProps> = ({
         return 'border-rose-200 dark:border-rose-900 bg-rose-50/70 dark:bg-rose-950/40 text-rose-800 dark:text-rose-300';
       case 'event':
       default:
-        return 'border-indigo-200 dark:border-indigo-900 bg-indigo-50/70 dark:bg-indigo-950/40 text-indigo-800 dark:text-indigo-300';
+        return 'border-orange-200 dark:border-orange-900 bg-orange-50/70 dark:bg-orange-950/40 text-orange-800 dark:text-orange-300';
     }
   };
 
@@ -60,7 +60,7 @@ export const WeekView: React.FC<WeekViewProps> = ({
               className={cn(
                 'min-h-[380px] p-2.5 sm:p-3 flex flex-col transition-all cursor-pointer select-none group',
                 isSelected
-                  ? 'bg-indigo-50/20 dark:bg-indigo-950/20'
+                  ? 'bg-orange-50/20 dark:bg-orange-950/20'
                   : 'bg-white dark:bg-zinc-900 hover:bg-zinc-50/60 dark:hover:bg-zinc-850/40'
               )}
             >
@@ -75,9 +75,9 @@ export const WeekView: React.FC<WeekViewProps> = ({
                       className={cn(
                         'text-sm font-mono font-bold h-6 w-6 rounded-full inline-flex items-center justify-center transition-colors',
                         isToday
-                          ? 'bg-indigo-600 text-white shadow-xs'
+                          ? 'bg-orange-600 text-white shadow-xs'
                           : isSelected
-                          ? 'text-indigo-600 dark:text-indigo-400 font-bold'
+                          ? 'text-orange-600 dark:text-orange-400 font-bold'
                           : 'text-zinc-850 dark:text-zinc-150'
                       )}
                     >
@@ -93,7 +93,7 @@ export const WeekView: React.FC<WeekViewProps> = ({
                     onAddEventForDate(day.date);
                   }}
                   title="Add Event on this day"
-                  className="h-6 w-6 rounded-md opacity-60 group-hover:opacity-100 hover:bg-zinc-100 dark:hover:bg-zinc-800 flex items-center justify-center text-zinc-400 hover:text-indigo-600 transition-all"
+                  className="h-6 w-6 rounded-md opacity-60 group-hover:opacity-100 hover:bg-zinc-100 dark:hover:bg-zinc-800 flex items-center justify-center text-zinc-400 hover:text-orange-600 transition-all"
                 >
                   <Plus className="h-3.5 w-3.5" />
                 </button>

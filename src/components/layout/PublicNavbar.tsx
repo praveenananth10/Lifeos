@@ -25,7 +25,7 @@ export const PublicNavbar: React.FC = () => {
   };
 
   return (
-    <header className="sticky top-0 z-50 w-full border-b border-zinc-200/80 dark:border-zinc-800/80 bg-white/80 dark:bg-zinc-950/80 backdrop-blur-md transition-colors duration-200">
+    <header className="sticky top-0 z-50 w-full border-b border-zinc-200/80 dark:border-[#27272A] bg-white/80 dark:bg-[#09090B]/80 backdrop-blur-md transition-colors duration-200">
       <div className="max-w-7xl mx-auto flex h-16 items-center justify-between px-4 sm:px-6 lg:px-8">
         {/* Brand identity */}
         <Link to="/" className="flex items-center gap-3 group">
@@ -36,14 +36,14 @@ export const PublicNavbar: React.FC = () => {
               className="h-8 w-8 rounded-lg object-cover shadow-xs transition-transform duration-200 group-hover:scale-105"
             />
             <span className="absolute -top-0.5 -right-0.5 flex h-2 w-2">
-              <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-indigo-400 opacity-75" />
-              <span className="relative inline-flex rounded-full h-2 w-2 bg-indigo-600 dark:bg-indigo-400" />
+              <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-amber-400 opacity-75" />
+              <span className="relative inline-flex rounded-full h-2 w-2 bg-orange-500" />
             </span>
           </div>
           <div className="flex flex-col">
             <span className="font-semibold text-base tracking-tight text-zinc-900 dark:text-zinc-100 flex items-center gap-1.5">
               LifeOS
-              <span className="text-[10px] font-medium text-indigo-600 dark:text-indigo-400 bg-indigo-50 dark:bg-indigo-950/60 px-1.5 py-0.2 rounded border border-indigo-200/50 dark:border-indigo-800/40">
+              <span className="text-[10px] font-medium text-orange-600 dark:text-orange-400 bg-orange-50 dark:bg-orange-950/60 px-1.5 py-0.2 rounded border border-orange-200/50 dark:border-orange-800/40">
                 1.0
               </span>
             </span>
@@ -69,7 +69,7 @@ export const PublicNavbar: React.FC = () => {
           ))}
           <Link
             to="/design-system"
-            className="text-xs font-medium text-zinc-500 hover:text-indigo-600 dark:text-zinc-400 dark:hover:text-indigo-400 transition-colors duration-150"
+            className="text-xs font-medium text-zinc-500 hover:text-orange-600 dark:text-zinc-400 dark:hover:text-orange-400 transition-colors duration-150"
           >
             Design System
           </Link>

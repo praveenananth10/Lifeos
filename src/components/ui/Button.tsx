@@ -30,13 +30,13 @@ export const Button = React.forwardRef<HTMLButtonElement, ButtonProps>(
 
     const variants = {
       primary:
-        'bg-indigo-600 text-white hover:bg-indigo-700 active:bg-indigo-800 dark:bg-indigo-500 dark:text-white dark:hover:bg-indigo-400 dark:active:bg-indigo-600 shadow-xs focus-visible:ring-indigo-500/40',
+        'bg-orange-600 text-white hover:bg-orange-700 active:bg-orange-800 dark:bg-orange-500 dark:text-zinc-950 dark:font-semibold dark:hover:bg-orange-400 dark:active:bg-orange-600 shadow-xs focus-visible:ring-orange-500/40',
       secondary:
-        'bg-white text-zinc-900 border border-zinc-200/90 hover:bg-zinc-50 hover:border-zinc-300 dark:bg-zinc-900 dark:text-zinc-100 dark:border-zinc-800 dark:hover:bg-zinc-850 dark:hover:border-zinc-700 shadow-2xs focus-visible:ring-zinc-400',
+        'bg-white text-zinc-900 border border-zinc-200/90 hover:bg-zinc-50 hover:border-zinc-300 dark:bg-[#121215] dark:text-zinc-100 dark:border-[#27272A] dark:hover:bg-zinc-800 dark:hover:border-zinc-700 shadow-2xs focus-visible:ring-zinc-400',
       outline:
-        'bg-transparent border border-zinc-300/80 text-zinc-700 hover:bg-zinc-100 hover:text-zinc-900 dark:border-zinc-700 dark:text-zinc-300 dark:hover:bg-zinc-800 dark:hover:text-zinc-100 focus-visible:ring-zinc-400',
+        'bg-transparent border border-zinc-300/80 text-zinc-700 hover:bg-zinc-100 hover:text-zinc-900 dark:border-[#27272A] dark:text-zinc-300 dark:hover:bg-[#121215] dark:hover:text-zinc-100 focus-visible:ring-zinc-400',
       ghost:
-        'bg-transparent text-zinc-600 hover:text-zinc-900 hover:bg-zinc-100/80 dark:text-zinc-400 dark:hover:text-zinc-100 dark:hover:bg-zinc-800/80 focus-visible:ring-zinc-400',
+        'bg-transparent text-zinc-600 hover:text-zinc-900 hover:bg-zinc-100/80 dark:text-zinc-400 dark:hover:text-zinc-100 dark:hover:bg-[#121215]/80 focus-visible:ring-zinc-400',
       danger:
         'bg-rose-50 text-rose-600 border border-rose-200/80 hover:bg-rose-100/80 dark:bg-rose-950/30 dark:text-rose-400 dark:border-rose-900/50 dark:hover:bg-rose-950/60 focus-visible:ring-rose-500/40',
     };

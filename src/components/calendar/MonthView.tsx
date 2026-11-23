@@ -36,7 +36,7 @@ export const MonthView: React.FC<MonthViewProps> = ({
         return 'bg-rose-50 text-rose-700 dark:bg-rose-950/60 dark:text-rose-300 border-rose-200/70 dark:border-rose-800/60';
       case 'event':
       default:
-        return 'bg-indigo-50 text-indigo-700 dark:bg-indigo-950/60 dark:text-indigo-300 border-indigo-200/70 dark:border-indigo-800/60';
+        return 'bg-orange-50 text-orange-700 dark:bg-orange-950/60 dark:text-orange-300 border-orange-200/70 dark:border-orange-800/60';
     }
   };
 
@@ -73,7 +73,7 @@ export const MonthView: React.FC<MonthViewProps> = ({
                 'min-h-[96px] sm:min-h-[110px] p-1.5 sm:p-2 transition-all flex flex-col justify-between cursor-pointer select-none relative group',
                 !cell.isCurrentMonth && 'bg-zinc-50/50 dark:bg-zinc-950/40 text-zinc-400',
                 cell.isCurrentMonth && 'bg-white dark:bg-zinc-900 hover:bg-zinc-50/80 dark:hover:bg-zinc-850/50',
-                isSelected && 'ring-2 ring-indigo-500 ring-inset bg-indigo-50/15 dark:bg-indigo-950/20 z-10'
+                isSelected && 'ring-2 ring-orange-500 ring-inset bg-orange-50/15 dark:bg-orange-950/20 z-10'
               )}
             >
               {/* Day Header: Number & Indicators */}
@@ -82,9 +82,9 @@ export const MonthView: React.FC<MonthViewProps> = ({
                   className={cn(
                     'text-xs font-mono font-medium h-6 w-6 rounded-full flex items-center justify-center transition-colors',
                     cell.isToday
-                      ? 'bg-indigo-600 text-white font-bold shadow-xs'
+                      ? 'bg-orange-600 text-white font-bold shadow-xs'
                       : isSelected
-                      ? 'text-indigo-600 dark:text-indigo-400 font-bold'
+                      ? 'text-orange-600 dark:text-orange-400 font-bold'
                       : cell.isCurrentMonth
                       ? 'text-zinc-800 dark:text-zinc-200'
                       : 'text-zinc-400 dark:text-zinc-600'

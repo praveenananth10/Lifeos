@@ -83,7 +83,7 @@ export const HabitMatrix: React.FC<HabitMatrixProps> = ({
                   key={day.date}
                   className={cn(
                     'py-3 px-2 text-center transition-colors',
-                    day.isToday && 'bg-indigo-50/50 dark:bg-indigo-950/30'
+                    day.isToday && 'bg-orange-50/50 dark:bg-orange-950/30'
                   )}
                 >
                   <span className="text-[10px] font-semibold text-zinc-400 uppercase tracking-wider block">
@@ -93,7 +93,7 @@ export const HabitMatrix: React.FC<HabitMatrixProps> = ({
                     className={cn(
                       'text-xs font-mono font-bold inline-flex items-center justify-center h-5 w-5 rounded-full mt-0.5',
                       day.isToday
-                        ? 'bg-indigo-600 text-white shadow-xs'
+                        ? 'bg-orange-600 text-white shadow-xs'
                         : 'text-zinc-700 dark:text-zinc-300'
                     )}
                   >
@@ -168,7 +168,7 @@ export const HabitMatrix: React.FC<HabitMatrixProps> = ({
                         key={day.date}
                         className={cn(
                           'py-3 px-2 text-center',
-                          day.isToday && 'bg-indigo-50/30 dark:bg-indigo-950/20'
+                          day.isToday && 'bg-orange-50/30 dark:bg-orange-950/20'
                         )}
                       >
                         <button

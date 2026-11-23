@@ -38,7 +38,7 @@ export const NoteEditorPane: React.FC<NoteEditorPaneProps> = ({
   if (!note) {
     return (
       <div className="h-full min-h-[460px] flex flex-col items-center justify-center p-8 text-center rounded-2xl border border-zinc-200/90 dark:border-zinc-800 bg-white dark:bg-zinc-900">
-        <div className="h-12 w-12 rounded-2xl bg-indigo-50 dark:bg-indigo-950/40 text-indigo-500 flex items-center justify-center mb-3">
+        <div className="h-12 w-12 rounded-2xl bg-orange-50 dark:bg-orange-950/40 text-orange-500 flex items-center justify-center mb-3">
           <FileText className="h-6 w-6" />
         </div>
         <h3 className="text-base font-semibold text-zinc-900 dark:text-zinc-50">
@@ -72,7 +72,7 @@ export const NoteEditorPane: React.FC<NoteEditorPaneProps> = ({
           <select
             value={note.category}
             onChange={(e) => onUpdateNote(note.id, { category: e.target.value as NoteCategory })}
-            className="h-7 rounded-lg px-2 text-xs bg-zinc-50 dark:bg-zinc-800 border border-zinc-200/80 dark:border-zinc-700 text-zinc-800 dark:text-zinc-200 focus:outline-none focus:border-indigo-500"
+            className="h-7 rounded-lg px-2 text-xs bg-zinc-50 dark:bg-zinc-800 border border-zinc-200/80 dark:border-zinc-700 text-zinc-800 dark:text-zinc-200 focus:outline-none focus:border-orange-500"
           >
             {CATEGORIES.map((cat) => (
               <option key={cat} value={cat}>
@@ -128,14 +128,14 @@ export const NoteEditorPane: React.FC<NoteEditorPaneProps> = ({
         rows={8}
         value={note.content}
         onChange={(e) => onUpdateNote(note.id, { content: e.target.value })}
-        className="w-full flex-1 rounded-xl p-3 text-xs sm:text-sm text-zinc-800 dark:text-zinc-200 placeholder:text-zinc-400 bg-zinc-50/50 dark:bg-zinc-900/60 border border-zinc-200/70 dark:border-zinc-800/80 focus:outline-none focus:border-indigo-500 resize-none leading-relaxed"
+        className="w-full flex-1 rounded-xl p-3 text-xs sm:text-sm text-zinc-800 dark:text-zinc-200 placeholder:text-zinc-400 bg-zinc-50/50 dark:bg-zinc-900/60 border border-zinc-200/70 dark:border-zinc-800/80 focus:outline-none focus:border-orange-500 resize-none leading-relaxed"
       />
 
       {/* Embedded Checklist Section */}
       <div className="space-y-3 pt-3 border-t border-zinc-100 dark:border-zinc-800">
         <div className="flex items-center justify-between">
           <div className="flex items-center gap-2">
-            <CheckSquare className="h-4 w-4 text-indigo-500" />
+            <CheckSquare className="h-4 w-4 text-orange-500" />
             <span className="text-xs font-semibold text-zinc-900 dark:text-zinc-100">
               Action Items &amp; Checklist
             </span>
@@ -161,7 +161,7 @@ export const NoteEditorPane: React.FC<NoteEditorPaneProps> = ({
                     'h-4 w-4 rounded flex items-center justify-center shrink-0 transition-colors',
                     item.done
                       ? 'bg-emerald-500 text-white'
-                      : 'border border-zinc-300 dark:border-zinc-600 hover:border-indigo-500'
+                      : 'border border-zinc-300 dark:border-zinc-600 hover:border-orange-500'
                   )}
                 >
                   {item.done && <Check className="h-3 w-3 stroke-[3]" />}
@@ -197,7 +197,7 @@ export const NoteEditorPane: React.FC<NoteEditorPaneProps> = ({
             placeholder="Add new action item and press Enter..."
             value={newChecklistText}
             onChange={(e) => setNewChecklistText(e.target.value)}
-            className="flex-1 h-8 rounded-lg px-3 text-xs bg-white dark:bg-zinc-900 border border-zinc-200/90 dark:border-zinc-800 text-zinc-900 dark:text-zinc-100 placeholder:text-zinc-400 focus:outline-none focus:border-indigo-500"
+            className="flex-1 h-8 rounded-lg px-3 text-xs bg-white dark:bg-zinc-900 border border-zinc-200/90 dark:border-zinc-800 text-zinc-900 dark:text-zinc-100 placeholder:text-zinc-400 focus:outline-none focus:border-orange-500"
           />
           <Button
             type="submit"

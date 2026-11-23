@@ -79,13 +79,13 @@ export const ForgotPasswordPage: React.FC = () => {
             ? "We've dispatched a recovery email to reset your LifeOS credentials."
             : "We've simulated sending a recovery email to reset your LifeOS credentials."
         }
-        icon={<MailCheck className="h-5 w-5 text-indigo-600 dark:text-indigo-400" />}
+        icon={<MailCheck className="h-5 w-5 text-orange-600 dark:text-orange-400" />}
         footerContent={
           <div className="flex items-center gap-1">
             <ArrowLeft className="h-3.5 w-3.5" />
             <Link
               to="/login"
-              className="text-indigo-600 dark:text-indigo-400 font-semibold hover:underline"
+              className="text-orange-600 dark:text-orange-400 font-semibold hover:underline"
             >
               Return to Sign In
             </Link>
@@ -93,7 +93,7 @@ export const ForgotPasswordPage: React.FC = () => {
         }
       >
         <div className="space-y-4 text-center">
-          <div className="p-4 rounded-xl border border-indigo-200/80 dark:border-indigo-900/60 bg-indigo-50/40 dark:bg-indigo-950/20 space-y-2">
+          <div className="p-4 rounded-xl border border-orange-200/80 dark:border-orange-900/60 bg-orange-50/40 dark:bg-orange-950/20 space-y-2">
             <p className="text-xs text-zinc-600 dark:text-zinc-400">
               A password reset link has been dispatched to:
             </p>
@@ -144,7 +144,7 @@ export const ForgotPasswordPage: React.FC = () => {
           <span>Remember your password?</span>
           <Link
             to="/login"
-            className="text-indigo-600 dark:text-indigo-400 font-semibold hover:underline ml-1"
+            className="text-orange-600 dark:text-orange-400 font-semibold hover:underline ml-1"
           >
             Log in
           </Link>

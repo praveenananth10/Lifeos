@@ -28,7 +28,7 @@ export const TaskItem: React.FC<TaskItemProps> = ({
   );
 
   const categoryColors: Record<string, string> = {
-    Work: 'bg-indigo-50 text-indigo-700 dark:bg-indigo-950/40 dark:text-indigo-300 border-indigo-200/60 dark:border-indigo-800/40',
+    Work: 'bg-orange-50 text-orange-700 dark:bg-orange-950/40 dark:text-orange-300 border-orange-200/60 dark:border-orange-800/40',
     Study: 'bg-sky-50 text-sky-700 dark:bg-sky-950/40 dark:text-sky-300 border-sky-200/60 dark:border-sky-800/40',
     Personal: 'bg-purple-50 text-purple-700 dark:bg-purple-950/40 dark:text-purple-300 border-purple-200/60 dark:border-purple-800/40',
     Health: 'bg-emerald-50 text-emerald-700 dark:bg-emerald-950/40 dark:text-emerald-300 border-emerald-200/60 dark:border-emerald-800/40',
@@ -53,7 +53,7 @@ export const TaskItem: React.FC<TaskItemProps> = ({
             'h-4.5 w-4.5 rounded-md mt-0.5 flex items-center justify-center transition-all shrink-0 cursor-pointer',
             task.completed
               ? 'bg-emerald-500 text-white'
-              : 'border border-zinc-300 dark:border-zinc-600 hover:border-indigo-500 hover:bg-indigo-50/50 dark:hover:bg-indigo-950/30'
+              : 'border border-zinc-300 dark:border-zinc-600 hover:border-orange-500 hover:bg-orange-50/50 dark:hover:bg-orange-950/30'
           )}
           aria-label={task.completed ? 'Mark task pending' : 'Mark task completed'}
         >
@@ -67,7 +67,7 @@ export const TaskItem: React.FC<TaskItemProps> = ({
                 'text-xs sm:text-sm font-medium tracking-tight truncate cursor-pointer select-none',
                 task.completed
                   ? 'line-through text-zinc-400 dark:text-zinc-500'
-                  : 'text-zinc-900 dark:text-zinc-100 hover:text-indigo-600 dark:hover:text-indigo-400'
+                  : 'text-zinc-900 dark:text-zinc-100 hover:text-orange-600 dark:hover:text-orange-400'
               )}
               onClick={() => onToggle(task.id)}
             >
@@ -106,7 +106,7 @@ export const TaskItem: React.FC<TaskItemProps> = ({
                 isOverdue && !task.completed
                   ? 'bg-rose-50 text-rose-600 dark:bg-rose-950/40 dark:text-rose-400 font-semibold'
                   : isToday
-                  ? 'bg-indigo-50 text-indigo-600 dark:bg-indigo-950/40 dark:text-indigo-400 font-medium'
+                  ? 'bg-orange-50 text-orange-600 dark:bg-orange-950/40 dark:text-orange-400 font-medium'
                   : 'text-zinc-400'
               )}
             >
@@ -147,7 +147,7 @@ export const TaskItem: React.FC<TaskItemProps> = ({
             isOverdue && !task.completed
               ? 'bg-rose-50 border-rose-200/80 text-rose-700 dark:bg-rose-950/40 dark:border-rose-900/40 dark:text-rose-300 font-semibold'
               : isToday
-              ? 'bg-indigo-50 border-indigo-200/80 text-indigo-700 dark:bg-indigo-950/40 dark:border-indigo-900/40 dark:text-indigo-300 font-medium'
+              ? 'bg-orange-50 border-orange-200/80 text-orange-700 dark:bg-orange-950/40 dark:border-orange-900/40 dark:text-orange-300 font-medium'
               : isTomorrow
               ? 'bg-amber-50 border-amber-200/80 text-amber-700 dark:bg-amber-950/40 dark:border-amber-900/40 dark:text-amber-300'
               : 'border-zinc-200 dark:border-zinc-800 text-zinc-500 dark:text-zinc-400'
@@ -163,7 +163,7 @@ export const TaskItem: React.FC<TaskItemProps> = ({
             type="button"
             onClick={() => onSchedule(task)}
             title="Schedule on Calendar"
-            className="h-7 w-7 rounded-md flex items-center justify-center text-zinc-400 hover:text-indigo-600 dark:hover:text-indigo-400 hover:bg-zinc-100 dark:hover:bg-zinc-800 transition-colors"
+            className="h-7 w-7 rounded-md flex items-center justify-center text-zinc-400 hover:text-orange-600 dark:hover:text-orange-400 hover:bg-zinc-100 dark:hover:bg-zinc-800 transition-colors"
           >
             <Calendar className="h-3.5 w-3.5" />
           </button>

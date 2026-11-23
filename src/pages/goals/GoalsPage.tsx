@@ -50,7 +50,7 @@ export const GoalsPage: React.FC = () => {
       <div className="flex flex-col sm:flex-row sm:items-center sm:justify-between gap-4 pb-4 border-b border-zinc-200/60 dark:border-zinc-800/60">
         <div>
           <div className="flex items-center gap-2">
-            <div className="h-8 w-8 rounded-lg bg-indigo-50 dark:bg-indigo-950/60 text-indigo-600 dark:text-indigo-400 flex items-center justify-center">
+            <div className="h-8 w-8 rounded-lg bg-orange-50 dark:bg-orange-950/60 text-orange-600 dark:text-orange-400 flex items-center justify-center">
               <Target className="h-4 w-4" />
             </div>
             <h1 className="text-xl sm:text-2xl font-bold tracking-tight text-zinc-900 dark:text-zinc-50">
@@ -108,15 +108,15 @@ export const GoalsPage: React.FC = () => {
             <span className="text-xs font-medium text-zinc-500 dark:text-zinc-400">
               Average OKR Completion
             </span>
-            <CheckCircle2 className="h-4 w-4 text-indigo-500" />
+            <CheckCircle2 className="h-4 w-4 text-orange-500" />
           </div>
           <div className="mt-2">
-            <span className="text-2xl font-bold font-mono text-indigo-600 dark:text-indigo-400">
+            <span className="text-2xl font-bold font-mono text-orange-600 dark:text-orange-400">
               {averageGoalProgress}%
             </span>
             <div className="h-1.5 w-full bg-zinc-100 dark:bg-zinc-800 rounded-full mt-2 overflow-hidden">
               <div
-                className="h-full bg-indigo-600 dark:bg-indigo-500 rounded-full transition-all duration-300"
+                className="h-full bg-orange-600 dark:bg-orange-500 rounded-full transition-all duration-300"
                 style={{ width: `${averageGoalProgress}%` }}
               />
             </div>

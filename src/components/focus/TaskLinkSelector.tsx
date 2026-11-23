@@ -42,7 +42,7 @@ export const TaskLinkSelector: React.FC<TaskLinkSelectorProps> = ({
         <button
           type="button"
           onClick={() => setIsOpen(!isOpen)}
-          className="text-[11px] text-indigo-600 dark:text-indigo-400 hover:text-indigo-700 font-medium flex items-center gap-1 cursor-pointer"
+          className="text-[11px] text-orange-600 dark:text-orange-400 hover:text-orange-700 font-medium flex items-center gap-1 cursor-pointer"
         >
           <CheckSquare className="h-3 w-3" />
           <span>{linkedTaskId ? 'Change linked task' : 'Link from tasks'}</span>
@@ -59,7 +59,7 @@ export const TaskLinkSelector: React.FC<TaskLinkSelectorProps> = ({
             onSessionLabelChange(e.target.value);
             if (linkedTaskId) onSelectTask(null); // Unlink if customized manually
           }}
-          className="w-full h-10 px-3.5 text-xs rounded-xl bg-white dark:bg-zinc-900 border border-zinc-200/90 dark:border-zinc-800 text-zinc-900 dark:text-zinc-100 placeholder:text-zinc-400 focus:outline-none focus:border-indigo-500 shadow-2xs"
+          className="w-full h-10 px-3.5 text-xs rounded-xl bg-white dark:bg-zinc-900 border border-zinc-200/90 dark:border-zinc-800 text-zinc-900 dark:text-zinc-100 placeholder:text-zinc-400 focus:outline-none focus:border-orange-500 shadow-2xs"
         />
 
         {/* Dropdown list of pending tasks */}
@@ -89,12 +89,12 @@ export const TaskLinkSelector: React.FC<TaskLinkSelectorProps> = ({
                   onClick={() => handlePickTask(t)}
                   className={`flex items-center justify-between p-2 rounded-lg cursor-pointer transition-colors text-xs ${
                     linkedTaskId === t.id
-                      ? 'bg-indigo-50 dark:bg-indigo-950/40 text-indigo-700 dark:text-indigo-300'
+                      ? 'bg-orange-50 dark:bg-orange-950/40 text-orange-700 dark:text-orange-300'
                       : 'hover:bg-zinc-50 dark:hover:bg-zinc-850 text-zinc-800 dark:text-zinc-200'
                   }`}
                 >
                   <div className="flex items-center gap-2 truncate pr-2">
-                    <Sparkles className="h-3 w-3 text-indigo-500 shrink-0" />
+                    <Sparkles className="h-3 w-3 text-orange-500 shrink-0" />
                     <span className="truncate font-medium">{t.title}</span>
                   </div>
                   <div className="flex items-center gap-1.5 shrink-0">

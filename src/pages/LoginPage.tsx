@@ -95,7 +95,7 @@ export const LoginPage: React.FC = () => {
           Don't have an account?{' '}
           <Link
             to="/signup"
-            className="text-indigo-600 dark:text-indigo-400 font-semibold hover:underline"
+            className="text-orange-600 dark:text-orange-400 font-semibold hover:underline"
           >
             Create an account
           </Link>
@@ -133,7 +133,7 @@ export const LoginPage: React.FC = () => {
             </label>
             <Link
               to="/forgot-password"
-              className="text-xs text-indigo-600 dark:text-indigo-400 hover:underline font-medium"
+              className="text-xs text-orange-600 dark:text-orange-400 hover:underline font-medium"
             >
               Forgot password?
             </Link>
@@ -154,7 +154,7 @@ export const LoginPage: React.FC = () => {
               className={`w-full h-9 rounded-lg pl-9 pr-10 text-sm transition-all duration-150 bg-white dark:bg-zinc-900 text-zinc-900 dark:text-zinc-100 placeholder:text-zinc-400 dark:placeholder:text-zinc-500 border ${
                 errors.password
                   ? 'border-rose-500 focus:border-rose-500 focus:ring-2 focus:ring-rose-500/20'
-                  : 'border-zinc-200/90 dark:border-zinc-800 focus:outline-none focus:border-indigo-500 dark:focus:border-indigo-400 focus:ring-2 focus:ring-indigo-500/20 dark:focus:ring-indigo-400/20'
+                  : 'border-zinc-200/90 dark:border-zinc-800 focus:outline-none focus:border-orange-500 dark:focus:border-orange-400 focus:ring-2 focus:ring-orange-500/20 dark:focus:ring-orange-400/20'
               }`}
               autoComplete="current-password"
             />
@@ -177,7 +177,7 @@ export const LoginPage: React.FC = () => {
               type="checkbox"
               checked={rememberMe}
               onChange={(e) => setRememberMe(e.target.checked)}
-              className="rounded border-zinc-300 dark:border-zinc-700 text-indigo-600 focus:ring-indigo-500/30 dark:bg-zinc-900 h-4 w-4"
+              className="rounded border-zinc-300 dark:border-zinc-700 text-orange-600 focus:ring-orange-500/30 dark:bg-zinc-900 h-4 w-4"
             />
             <span>Remember this device</span>
           </label>
@@ -212,10 +212,10 @@ export const LoginPage: React.FC = () => {
         <Button
           type="button"
           variant="secondary"
-          className="w-full text-xs font-medium h-9 border-indigo-200 dark:border-indigo-900/60 text-indigo-700 dark:text-indigo-300 hover:bg-indigo-50/50 dark:hover:bg-indigo-950/30"
+          className="w-full text-xs font-medium h-9 border-orange-200 dark:border-orange-900/60 text-orange-700 dark:text-orange-300 hover:bg-orange-50/50 dark:hover:bg-orange-950/30"
           onClick={handleDemoLogin}
           isLoading={isDemoLoading}
-          leftIcon={<UserCheck className="h-4 w-4 text-indigo-600 dark:text-indigo-400" />}
+          leftIcon={<UserCheck className="h-4 w-4 text-orange-600 dark:text-orange-400" />}
         >
           Continue with Demo Account (Instant Access)
         </Button>

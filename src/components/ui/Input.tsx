@@ -34,10 +34,10 @@ export const Input = React.forwardRef<HTMLInputElement, InputProps>(
             ref={ref}
             className={cn(
               'w-full h-9 rounded-lg px-3 text-sm transition-all duration-150',
-              'bg-white dark:bg-zinc-900',
+              'bg-white dark:bg-[#121215]',
               'text-zinc-900 dark:text-zinc-100 placeholder:text-zinc-400 dark:placeholder:text-zinc-500',
-              'border border-zinc-200/90 dark:border-zinc-800',
-              'focus:outline-none focus:border-indigo-500 dark:focus:border-indigo-400 focus:ring-2 focus:ring-indigo-500/20 dark:focus:ring-indigo-400/20',
+              'border border-zinc-200/90 dark:border-[#27272A]',
+              'focus:outline-none focus:border-orange-500 dark:focus:border-orange-400 focus:ring-2 focus:ring-orange-500/20 dark:focus:ring-orange-400/20',
               'disabled:bg-zinc-100 dark:disabled:bg-zinc-800 disabled:opacity-50 disabled:cursor-not-allowed',
               Boolean(leftIcon) && 'pl-9',
               Boolean(rightIcon) && 'pr-9',

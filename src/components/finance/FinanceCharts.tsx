@@ -21,13 +21,13 @@ export interface FinanceChartsProps {
 }
 
 const CATEGORY_COLORS: Record<string, string> = {
-  Technology: '#6366F1', // Indigo
+  Technology: '#F97316', // Vibrant Orange
   Groceries: '#10B981', // Emerald
   Dining: '#8B5CF6', // Purple
   Health: '#EC4899', // Pink
   Education: '#3B82F6', // Blue
   Travel: '#F59E0B', // Amber
-  Entertainment: '#F97316', // Orange
+  Entertainment: '#FB923C', // Warm Amber
   Utilities: '#06B6D4', // Cyan
   General: '#71717A', // Zinc
 };

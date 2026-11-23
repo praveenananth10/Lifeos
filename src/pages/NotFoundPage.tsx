@@ -27,11 +27,11 @@ export const NotFoundPage: React.FC = () => {
   ];
 
   return (
-    <div className="min-h-screen bg-[#FAFAFA] dark:bg-[#09090B] text-zinc-900 dark:text-zinc-100 flex flex-col transition-colors selection:bg-indigo-500/20 selection:text-indigo-600 dark:selection:text-indigo-400">
+    <div className="min-h-screen bg-[#FAFAFA] dark:bg-[#09090B] text-zinc-900 dark:text-zinc-100 flex flex-col transition-colors selection:bg-orange-500/20 selection:text-orange-600 dark:selection:text-orange-400">
       {/* Top Header */}
-      <header className="h-16 px-6 sm:px-10 flex items-center justify-between border-b border-zinc-200/80 dark:border-zinc-800/80 bg-white/70 dark:bg-[#09090B]/70 backdrop-blur-md sticky top-0 z-20">
+      <header className="h-16 px-6 sm:px-10 flex items-center justify-between border-b border-zinc-200/80 dark:border-[#27272A] bg-white/70 dark:bg-[#09090B]/70 backdrop-blur-md sticky top-0 z-20">
         <Link to="/" className="flex items-center gap-2.5 group">
-          <div className="w-8 h-8 rounded-lg bg-indigo-600 flex items-center justify-center text-white shadow-sm shadow-indigo-500/20 group-hover:scale-105 transition-transform">
+          <div className="w-8 h-8 rounded-lg bg-orange-600 flex items-center justify-center text-white shadow-sm shadow-orange-500/20 group-hover:scale-105 transition-transform">
             <Sparkles className="w-4 h-4" />
           </div>
           <div className="flex flex-col">
@@ -53,12 +53,12 @@ export const NotFoundPage: React.FC = () => {
       <main className="flex-1 flex flex-col items-center justify-center px-4 sm:px-6 py-16 text-center">
         <div className="max-w-md w-full">
           {/* Compass Icon Badge */}
-          <div className="inline-flex items-center justify-center w-14 h-14 rounded-2xl bg-indigo-50 dark:bg-indigo-950/40 border border-indigo-200/60 dark:border-indigo-900/50 text-indigo-600 dark:text-indigo-400 mb-6 shadow-sm">
+          <div className="inline-flex items-center justify-center w-14 h-14 rounded-2xl bg-orange-50 dark:bg-orange-950/40 border border-orange-200/60 dark:border-orange-900/50 text-orange-600 dark:text-orange-400 mb-6 shadow-sm">
             <Compass className="w-7 h-7 stroke-[1.75]" />
           </div>
 
           {/* 404 Code */}
-          <p className="text-xs font-mono font-semibold uppercase tracking-widest text-indigo-600 dark:text-indigo-400 mb-2">
+          <p className="text-xs font-mono font-semibold uppercase tracking-widest text-orange-600 dark:text-orange-400 mb-2">
             Error 404
           </p>
 
@@ -102,9 +102,9 @@ export const NotFoundPage: React.FC = () => {
                   <Link
                     key={item.path}
                     to={item.path}
-                    className="flex items-center gap-2 p-2 rounded-lg border border-zinc-200 dark:border-zinc-800/80 bg-white dark:bg-zinc-900 hover:border-indigo-400/50 dark:hover:border-indigo-500/50 hover:bg-zinc-50 dark:hover:bg-zinc-850 text-xs font-medium text-zinc-700 dark:text-zinc-300 transition-all text-left group"
+                    className="flex items-center gap-2 p-2 rounded-lg border border-zinc-200 dark:border-zinc-800/80 bg-white dark:bg-zinc-900 hover:border-orange-400/50 dark:hover:border-orange-500/50 hover:bg-zinc-50 dark:hover:bg-zinc-850 text-xs font-medium text-zinc-700 dark:text-zinc-300 transition-all text-left group"
                   >
-                    <Icon className="w-3.5 h-3.5 text-zinc-400 group-hover:text-indigo-600 dark:group-hover:text-indigo-400 transition-colors" />
+                    <Icon className="w-3.5 h-3.5 text-zinc-400 group-hover:text-orange-600 dark:group-hover:text-orange-400 transition-colors" />
                     <span className="truncate">{item.label}</span>
                   </Link>
                 );

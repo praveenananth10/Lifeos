@@ -68,7 +68,7 @@ export const ZenOverlay: React.FC<ZenOverlayProps> = ({
       {/* Top Bar */}
       <div className="flex items-center justify-between">
         <div className="flex items-center gap-2.5">
-          <div className="h-7 w-7 rounded-lg bg-indigo-600 flex items-center justify-center text-white font-bold text-xs">
+          <div className="h-7 w-7 rounded-lg bg-orange-600 flex items-center justify-center text-white font-bold text-xs">
             L
           </div>
           <div>
@@ -117,7 +117,7 @@ export const ZenOverlay: React.FC<ZenOverlayProps> = ({
 
       {/* Bottom Subtext */}
       <div className="flex items-center justify-center gap-2 text-xs text-zinc-400 dark:text-zinc-500 text-center">
-        <ShieldAlert className="h-3.5 w-3.5 text-indigo-500" />
+        <ShieldAlert className="h-3.5 w-3.5 text-orange-500" />
         <span>Silence notifications. Single-task with complete clarity.</span>
       </div>
     </div>

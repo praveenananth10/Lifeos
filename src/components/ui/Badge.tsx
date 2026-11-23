@@ -2,7 +2,7 @@ import React from 'react';
 import { cn } from '../../utils/cn';
 
 export interface BadgeProps extends React.HTMLAttributes<HTMLSpanElement> {
-  variant?: 'default' | 'secondary' | 'outline' | 'indigo' | 'success' | 'warning' | 'danger' | 'info';
+  variant?: 'default' | 'secondary' | 'outline' | 'orange' | 'indigo' | 'success' | 'warning' | 'danger' | 'info';
   dot?: boolean;
 }
 
@@ -19,9 +19,11 @@ export const Badge: React.FC<BadgeProps> = ({
     secondary:
       'bg-zinc-100 text-zinc-800 dark:bg-zinc-800 dark:text-zinc-300',
     outline:
-      'border border-zinc-300 text-zinc-700 dark:border-zinc-700 dark:text-zinc-300',
+      'border border-zinc-300 text-zinc-700 dark:border-[#27272A] dark:text-zinc-300',
+    orange:
+      'bg-orange-50 text-orange-700 border border-orange-200/80 dark:bg-orange-950/40 dark:text-orange-300 dark:border-orange-800/60',
     indigo:
-      'bg-indigo-50 text-indigo-700 border border-indigo-200/80 dark:bg-indigo-950/40 dark:text-indigo-300 dark:border-indigo-800/60',
+      'bg-orange-50 text-orange-700 border border-orange-200/80 dark:bg-orange-950/40 dark:text-orange-300 dark:border-orange-800/60',
     success:
       'bg-emerald-50 text-emerald-700 border border-emerald-200/60 dark:bg-emerald-950/30 dark:text-emerald-400 dark:border-emerald-800/40',
     warning:
@@ -36,7 +38,8 @@ export const Badge: React.FC<BadgeProps> = ({
     default: 'bg-white dark:bg-zinc-900',
     secondary: 'bg-zinc-500',
     outline: 'bg-zinc-400 dark:bg-zinc-500',
-    indigo: 'bg-indigo-500',
+    orange: 'bg-orange-500',
+    indigo: 'bg-orange-500',
     success: 'bg-emerald-500',
     warning: 'bg-amber-500',
     danger: 'bg-rose-500',

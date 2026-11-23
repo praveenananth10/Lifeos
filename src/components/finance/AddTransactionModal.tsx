@@ -150,7 +150,7 @@ const AddTransactionForm: React.FC<AddTransactionFormProps> = ({
           <select
             value={category}
             onChange={(e) => setCategory(e.target.value)}
-            className="w-full h-9 rounded-lg px-3 text-xs bg-white dark:bg-zinc-900 border border-zinc-200/90 dark:border-zinc-800 text-zinc-900 dark:text-zinc-100 focus:outline-none focus:border-indigo-500"
+            className="w-full h-9 rounded-lg px-3 text-xs bg-white dark:bg-zinc-900 border border-zinc-200/90 dark:border-zinc-800 text-zinc-900 dark:text-zinc-100 focus:outline-none focus:border-orange-500"
           >
             {currentCategories.map((cat) => (
               <option key={cat} value={cat}>
@@ -170,7 +170,7 @@ const AddTransactionForm: React.FC<AddTransactionFormProps> = ({
           type="date"
           value={date}
           onChange={(e) => setDate(e.target.value)}
-          className="w-full h-9 rounded-lg px-3 text-xs bg-white dark:bg-zinc-900 border border-zinc-200/90 dark:border-zinc-800 text-zinc-900 dark:text-zinc-100 focus:outline-none focus:border-indigo-500"
+          className="w-full h-9 rounded-lg px-3 text-xs bg-white dark:bg-zinc-900 border border-zinc-200/90 dark:border-zinc-800 text-zinc-900 dark:text-zinc-100 focus:outline-none focus:border-orange-500"
         />
       </div>
 
@@ -204,7 +204,7 @@ export const AddTransactionModal: React.FC<AddTransactionModalProps> = ({
       onClose={onClose}
       title={
         <div className="flex items-center gap-2">
-          <DollarSign className="h-4 w-4 text-indigo-600 dark:text-indigo-400" />
+          <DollarSign className="h-4 w-4 text-orange-600 dark:text-orange-400" />
           <span>New Transaction</span>
         </div>
       }

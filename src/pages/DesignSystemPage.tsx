@@ -206,7 +206,7 @@ export const DesignSystemPage: React.FC = () => {
               <Badge variant="default">Default</Badge>
               <Badge variant="secondary">Secondary</Badge>
               <Badge variant="outline">Outline</Badge>
-              <Badge variant="indigo">Indigo Accent</Badge>
+              <Badge variant="orange">Orange Accent</Badge>
               <Badge variant="success" dot>Active / Complete</Badge>
               <Badge variant="warning" dot>In Progress / Warning</Badge>
               <Badge variant="danger" dot>Urgent / Blocked</Badge>

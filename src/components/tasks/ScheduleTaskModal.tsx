@@ -85,7 +85,7 @@ const ScheduleTaskModalForm: React.FC<ScheduleTaskModalFormProps> = ({
           type="date"
           value={date}
           onChange={(e) => setDate(e.target.value)}
-          className="w-full h-9 rounded-lg px-3 text-xs bg-white dark:bg-zinc-900 border border-zinc-200/90 dark:border-zinc-800 text-zinc-900 dark:text-zinc-100 focus:outline-none focus:border-indigo-500"
+          className="w-full h-9 rounded-lg px-3 text-xs bg-white dark:bg-zinc-900 border border-zinc-200/90 dark:border-zinc-800 text-zinc-900 dark:text-zinc-100 focus:outline-none focus:border-orange-500"
         />
       </div>
 
@@ -98,7 +98,7 @@ const ScheduleTaskModalForm: React.FC<ScheduleTaskModalFormProps> = ({
           <button
             type="button"
             onClick={() => applyPreset('09:00', '10:30', 'focus')}
-            className="text-[10px] py-1.5 px-2 rounded-lg border border-zinc-200 dark:border-zinc-800 hover:border-indigo-500 bg-zinc-50 dark:bg-zinc-900 text-zinc-700 dark:text-zinc-300 cursor-pointer flex flex-col items-center"
+            className="text-[10px] py-1.5 px-2 rounded-lg border border-zinc-200 dark:border-zinc-800 hover:border-orange-500 bg-zinc-50 dark:bg-zinc-900 text-zinc-700 dark:text-zinc-300 cursor-pointer flex flex-col items-center"
           >
             <span className="font-semibold">Morning Focus</span>
             <span className="text-zinc-400 text-[9px]">09:00 - 10:30</span>
@@ -106,7 +106,7 @@ const ScheduleTaskModalForm: React.FC<ScheduleTaskModalFormProps> = ({
           <button
             type="button"
             onClick={() => applyPreset('14:00', '15:30', 'focus')}
-            className="text-[10px] py-1.5 px-2 rounded-lg border border-zinc-200 dark:border-zinc-800 hover:border-indigo-500 bg-zinc-50 dark:bg-zinc-900 text-zinc-700 dark:text-zinc-300 cursor-pointer flex flex-col items-center"
+            className="text-[10px] py-1.5 px-2 rounded-lg border border-zinc-200 dark:border-zinc-800 hover:border-orange-500 bg-zinc-50 dark:bg-zinc-900 text-zinc-700 dark:text-zinc-300 cursor-pointer flex flex-col items-center"
           >
             <span className="font-semibold">Afternoon Sprint</span>
             <span className="text-zinc-400 text-[9px]">14:00 - 15:30</span>
@@ -114,7 +114,7 @@ const ScheduleTaskModalForm: React.FC<ScheduleTaskModalFormProps> = ({
           <button
             type="button"
             onClick={() => applyPreset('16:30', '17:30', 'deadline')}
-            className="text-[10px] py-1.5 px-2 rounded-lg border border-zinc-200 dark:border-zinc-800 hover:border-indigo-500 bg-zinc-50 dark:bg-zinc-900 text-zinc-700 dark:text-zinc-300 cursor-pointer flex flex-col items-center"
+            className="text-[10px] py-1.5 px-2 rounded-lg border border-zinc-200 dark:border-zinc-800 hover:border-orange-500 bg-zinc-50 dark:bg-zinc-900 text-zinc-700 dark:text-zinc-300 cursor-pointer flex flex-col items-center"
           >
             <span className="font-semibold">Review / Close</span>
             <span className="text-zinc-400 text-[9px]">16:30 - 17:30</span>
@@ -132,7 +132,7 @@ const ScheduleTaskModalForm: React.FC<ScheduleTaskModalFormProps> = ({
             type="time"
             value={startTime}
             onChange={(e) => setStartTime(e.target.value)}
-            className="w-full h-9 rounded-lg px-3 text-xs bg-white dark:bg-zinc-900 border border-zinc-200/90 dark:border-zinc-800 text-zinc-900 dark:text-zinc-100 focus:outline-none focus:border-indigo-500"
+            className="w-full h-9 rounded-lg px-3 text-xs bg-white dark:bg-zinc-900 border border-zinc-200/90 dark:border-zinc-800 text-zinc-900 dark:text-zinc-100 focus:outline-none focus:border-orange-500"
           />
         </div>
 
@@ -144,7 +144,7 @@ const ScheduleTaskModalForm: React.FC<ScheduleTaskModalFormProps> = ({
             type="time"
             value={endTime}
             onChange={(e) => setEndTime(e.target.value)}
-            className="w-full h-9 rounded-lg px-3 text-xs bg-white dark:bg-zinc-900 border border-zinc-200/90 dark:border-zinc-800 text-zinc-900 dark:text-zinc-100 focus:outline-none focus:border-indigo-500"
+            className="w-full h-9 rounded-lg px-3 text-xs bg-white dark:bg-zinc-900 border border-zinc-200/90 dark:border-zinc-800 text-zinc-900 dark:text-zinc-100 focus:outline-none focus:border-orange-500"
           />
         </div>
       </div>
@@ -168,7 +168,7 @@ const ScheduleTaskModalForm: React.FC<ScheduleTaskModalFormProps> = ({
               onClick={() => setType(item.id)}
               className={`p-2 rounded-lg border text-left transition-all cursor-pointer ${
                 type === item.id
-                  ? 'bg-indigo-50/70 dark:bg-indigo-950/40 border-indigo-500 dark:border-indigo-500 text-indigo-700 dark:text-indigo-300'
+                  ? 'bg-orange-50/70 dark:bg-orange-950/40 border-orange-500 dark:border-orange-500 text-orange-700 dark:text-orange-300'
                   : 'bg-white dark:bg-zinc-900 border-zinc-200 dark:border-zinc-800 text-zinc-600 dark:text-zinc-400 hover:border-zinc-300'
               }`}
             >
@@ -207,7 +207,7 @@ export const ScheduleTaskModal: React.FC<ScheduleTaskModalProps> = ({
       onClose={onClose}
       title={
         <div className="flex items-center gap-2">
-          <Calendar className="h-4 w-4 text-indigo-600 dark:text-indigo-400" />
+          <Calendar className="h-4 w-4 text-orange-600 dark:text-orange-400" />
           <span>Schedule Task on Calendar</span>
         </div>
       }

@@ -45,12 +45,12 @@ export const HabitAnalytics: React.FC<HabitAnalyticsProps> = ({ habits, todayDat
     }
     const ratio = completedCount / totalCount;
     if (ratio <= 0.34) {
-      return 'bg-indigo-200 dark:bg-indigo-950/70 border-indigo-300 dark:border-indigo-800/60';
+      return 'bg-orange-200 dark:bg-orange-950/70 border-orange-300 dark:border-orange-800/60';
     }
     if (ratio <= 0.67) {
-      return 'bg-indigo-400 dark:bg-indigo-600/70 border-indigo-500 dark:border-indigo-500/60';
+      return 'bg-orange-400 dark:bg-orange-600/70 border-orange-500 dark:border-orange-500/60';
     }
-    return 'bg-indigo-600 dark:bg-indigo-500 border-indigo-700 dark:border-indigo-400';
+    return 'bg-orange-600 dark:bg-orange-500 border-orange-700 dark:border-orange-400';
   };
 
   return (
@@ -85,7 +85,7 @@ export const HabitAnalytics: React.FC<HabitAnalyticsProps> = ({ habits, todayDat
                   tickFormatter={(val) => `${val}%`}
                 />
                 <Tooltip
-                  cursor={{ fill: 'rgba(99, 102, 241, 0.08)' }}
+                  cursor={{ fill: 'rgba(249, 115, 22, 0.08)' }}
                   content={({ active, payload }) => {
                     if (active && payload && payload.length) {
                       const data = payload[0].payload as (typeof chartData)[0];
@@ -94,7 +94,7 @@ export const HabitAnalytics: React.FC<HabitAnalyticsProps> = ({ habits, todayDat
                           <div className="font-semibold text-zinc-900 dark:text-zinc-50 font-mono">
                             {data.fullDate}
                           </div>
-                          <div className="text-indigo-600 dark:text-indigo-400 font-bold">
+                          <div className="text-orange-600 dark:text-orange-400 font-bold">
                             {data.rate}% Completion
                           </div>
                           <div className="text-[11px] text-zinc-500">
@@ -108,9 +108,9 @@ export const HabitAnalytics: React.FC<HabitAnalyticsProps> = ({ habits, todayDat
                 />
                 <Bar
                   dataKey="rate"
-                  fill="#4F46E5"
+                  fill="#F97316"
                   radius={[4, 4, 0, 0]}
-                  className="fill-indigo-600 dark:fill-indigo-500"
+                  className="fill-orange-600 dark:fill-orange-500"
                 />
               </BarChart>
             </ResponsiveContainer>
@@ -145,7 +145,7 @@ export const HabitAnalytics: React.FC<HabitAnalyticsProps> = ({ habits, todayDat
                   className={cn(
                     'h-8 sm:h-9 rounded-lg border flex flex-col items-center justify-center transition-all cursor-pointer select-none relative group',
                     getHeatmapColor(completedCount, totalCount),
-                    isToday && 'ring-2 ring-indigo-500 ring-offset-1'
+                    isToday && 'ring-2 ring-orange-500 ring-offset-1'
                   )}
                 >
                   <span
@@ -167,9 +167,9 @@ export const HabitAnalytics: React.FC<HabitAnalyticsProps> = ({ habits, todayDat
             <div className="flex items-center gap-1.5">
               <span>Less</span>
               <div className="h-3 w-3 rounded-xs bg-zinc-100 dark:bg-zinc-800 border border-zinc-200 dark:border-zinc-700" />
-              <div className="h-3 w-3 rounded-xs bg-indigo-200 dark:bg-indigo-950/70" />
-              <div className="h-3 w-3 rounded-xs bg-indigo-400 dark:bg-indigo-600/70" />
-              <div className="h-3 w-3 rounded-xs bg-indigo-600 dark:bg-indigo-500" />
+              <div className="h-3 w-3 rounded-xs bg-orange-200 dark:bg-orange-950/70" />
+              <div className="h-3 w-3 rounded-xs bg-orange-400 dark:bg-orange-600/70" />
+              <div className="h-3 w-3 rounded-xs bg-orange-600 dark:bg-orange-500" />
               <span>More</span>
             </div>
           </div>

@@ -157,23 +157,23 @@ export const LandingPage: React.FC = () => {
         {/* HERO SECTION */}
         <section className="relative overflow-hidden pt-20 pb-16 sm:pt-28 sm:pb-24 px-4 sm:px-6 lg:px-8 max-w-7xl mx-auto text-center">
           {/* Subtle Ambient Glow */}
-          <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[600px] h-[350px] bg-indigo-500/10 dark:bg-indigo-600/10 blur-[120px] pointer-events-none rounded-full" />
+          <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[600px] h-[350px] bg-orange-500/10 dark:bg-orange-600/10 blur-[120px] pointer-events-none rounded-full" />
 
           <div className="relative space-y-6 max-w-4xl mx-auto">
             {/* Announcement Badge */}
             <div className="inline-flex items-center gap-2 rounded-full border border-zinc-200 dark:border-zinc-800 bg-white/80 dark:bg-zinc-900/80 px-3.5 py-1 text-xs font-medium text-zinc-700 dark:text-zinc-300 shadow-2xs backdrop-blur-sm">
-              <span className="flex h-2 w-2 rounded-full bg-indigo-600 dark:bg-indigo-400" />
+              <span className="flex h-2 w-2 rounded-full bg-orange-500 animate-pulse" />
               <span>LifeOS 1.0 • Your Personal Operating System</span>
               <span className="text-zinc-300 dark:text-zinc-700">|</span>
-              <span className="text-indigo-600 dark:text-indigo-400 font-semibold flex items-center gap-0.5">
-                Linear Slate &amp; Indigo <ChevronRight className="h-3 w-3 inline" />
+              <span className="text-orange-600 dark:text-orange-400 font-semibold flex items-center gap-0.5">
+                Sleek Orange &amp; Black <ChevronRight className="h-3 w-3 inline" />
               </span>
             </div>
 
             {/* Main Headline */}
             <h1 className="text-4xl sm:text-6xl lg:text-7xl font-bold tracking-tight text-zinc-900 dark:text-zinc-50 leading-[1.08]">
               Organise Your Life.{' '}
-              <span className="bg-gradient-to-r from-indigo-600 to-indigo-500 dark:from-indigo-400 dark:to-indigo-300 bg-clip-text text-transparent">
+              <span className="bg-gradient-to-r from-orange-600 to-amber-500 dark:from-orange-400 dark:to-amber-300 bg-clip-text text-transparent">
                 Focus on What Matters.
               </span>
             </h1>
@@ -217,7 +217,7 @@ export const LandingPage: React.FC = () => {
                 Local-first privacy architecture
               </span>
               <span className="flex items-center gap-1.5">
-                <Zap className="h-3.5 w-3.5 text-indigo-500" />
+                <Zap className="h-3.5 w-3.5 text-orange-500" />
                 Zero subscription fatigue
               </span>
             </div>
@@ -227,7 +227,7 @@ export const LandingPage: React.FC = () => {
         {/* INTERACTIVE UI PREVIEW MOCKUP */}
         <section id="preview" className="relative px-4 sm:px-6 lg:px-8 max-w-6xl mx-auto pb-24">
           <div className="text-center mb-6 space-y-1">
-            <Badge variant="indigo" className="text-[10px]">
+            <Badge variant="orange" className="text-[10px]">
               Interactive Preview
             </Badge>
             <h2 className="text-xl sm:text-2xl font-bold tracking-tight text-zinc-900 dark:text-zinc-100">
@@ -239,7 +239,7 @@ export const LandingPage: React.FC = () => {
           </div>
 
           {/* SaaS App Window Container */}
-          <div className="rounded-2xl border border-zinc-200/90 dark:border-zinc-800/90 bg-white dark:bg-zinc-900/90 shadow-2xl shadow-indigo-500/5 dark:shadow-none overflow-hidden transition-all duration-300">
+          <div className="rounded-2xl border border-zinc-200/90 dark:border-zinc-800/90 bg-white dark:bg-zinc-900/90 shadow-2xl shadow-orange-500/5 dark:shadow-none overflow-hidden transition-all duration-300">
             {/* macOS / Linear Window Chrome */}
             <div className="flex items-center justify-between px-4 py-3 border-b border-zinc-200/80 dark:border-zinc-800/80 bg-zinc-50/70 dark:bg-zinc-950/70 select-none">
               <div className="flex items-center gap-2">
@@ -271,7 +271,7 @@ export const LandingPage: React.FC = () => {
               <div className="hidden md:flex md:col-span-3 border-r border-zinc-200/80 dark:border-zinc-800/80 bg-zinc-50/40 dark:bg-zinc-950/30 p-4 flex-col justify-between text-xs select-none">
                 <div className="space-y-4">
                   <div className="flex items-center gap-2 px-2 py-1">
-                    <div className="h-5 w-5 rounded-md bg-indigo-600 dark:bg-indigo-500 text-white flex items-center justify-center font-bold text-[10px]">
+                    <div className="h-5 w-5 rounded-md bg-orange-600 dark:bg-orange-500 text-white flex items-center justify-center font-bold text-[10px]">
                       OS
                     </div>
                     <span className="font-semibold text-zinc-800 dark:text-zinc-200">Personal Hub</span>
@@ -280,9 +280,9 @@ export const LandingPage: React.FC = () => {
                   <div className="space-y-0.5">
                     <div className="px-2 py-1.5 rounded-lg bg-zinc-200/70 dark:bg-zinc-800 text-zinc-900 dark:text-zinc-50 font-medium flex items-center justify-between">
                       <span className="flex items-center gap-2">
-                        <CheckSquare className="h-3.5 w-3.5 text-indigo-600 dark:text-indigo-400" /> Today's Sprint
+                        <CheckSquare className="h-3.5 w-3.5 text-orange-600 dark:text-orange-400" /> Today's Sprint
                       </span>
-                      <span className="font-mono text-[10px] bg-indigo-100 dark:bg-indigo-950/80 text-indigo-700 dark:text-indigo-300 px-1.5 rounded">3</span>
+                      <span className="font-mono text-[10px] bg-orange-100 dark:bg-orange-950/80 text-orange-700 dark:text-orange-300 px-1.5 rounded">3</span>
                     </div>
                     <div className="px-2 py-1.5 rounded-lg text-zinc-600 dark:text-zinc-400 hover:bg-zinc-100 dark:hover:bg-zinc-900 flex items-center gap-2">
                       <Calendar className="h-3.5 w-3.5" /> Calendar
@@ -323,7 +323,7 @@ export const LandingPage: React.FC = () => {
                     </p>
                   </div>
                   <div className="flex items-center gap-2">
-                    <Badge variant="indigo" className="text-[11px]">
+                    <Badge variant="orange" className="text-[11px]">
                       Deep Work Sprint
                     </Badge>
                     <span className="text-xs text-zinc-400 font-mono">
@@ -347,7 +347,7 @@ export const LandingPage: React.FC = () => {
                           className={`flex items-center justify-between p-3 rounded-xl border transition-all duration-150 cursor-pointer ${
                             task.completed
                               ? 'bg-zinc-50/80 dark:bg-zinc-900/40 border-zinc-200/60 dark:border-zinc-800/60 opacity-75'
-                              : 'bg-white dark:bg-zinc-900 border-zinc-200 dark:border-zinc-800 hover:border-indigo-400 dark:hover:border-indigo-600 shadow-2xs'
+                              : 'bg-white dark:bg-zinc-900 border-zinc-200 dark:border-zinc-800 hover:border-orange-400 dark:hover:border-orange-500 shadow-2xs'
                           }`}
                         >
                           <div className="flex items-center gap-3">
@@ -371,7 +371,7 @@ export const LandingPage: React.FC = () => {
                             </span>
                           </div>
                           <Badge
-                            variant={task.completed ? 'secondary' : 'indigo'}
+                            variant={task.completed ? 'secondary' : 'orange'}
                             className="text-[10px]"
                           >
                             {task.tag}
@@ -407,9 +407,9 @@ export const LandingPage: React.FC = () => {
                     <div className="space-y-1">
                       <div className="flex items-center justify-between text-xs font-medium">
                         <span className="text-zinc-500 dark:text-zinc-400 flex items-center gap-1.5">
-                          <Clock className="h-3.5 w-3.5 text-indigo-500" /> Focus Session
+                          <Clock className="h-3.5 w-3.5 text-orange-500" /> Focus Session
                         </span>
-                        <Badge variant="indigo" className="text-[10px]">
+                        <Badge variant="orange" className="text-[10px]">
                           Pomodoro
                         </Badge>
                       </div>
@@ -457,7 +457,7 @@ export const LandingPage: React.FC = () => {
         {/* CORE MODULES BENTO GRID (#features) */}
         <section id="features" className="py-20 px-4 sm:px-6 lg:px-8 max-w-7xl mx-auto border-t border-zinc-200/60 dark:border-zinc-800/60">
           <div className="text-center max-w-3xl mx-auto space-y-3 mb-16">
-            <Badge variant="indigo" className="text-[10px]">
+            <Badge variant="orange" className="text-[10px]">
               Complete Personal Ecosystem
             </Badge>
             <h2 className="text-3xl sm:text-4xl font-bold tracking-tight text-zinc-900 dark:text-zinc-50">
@@ -477,15 +477,15 @@ export const LandingPage: React.FC = () => {
                   key={module.title}
                   variant="default"
                   interactive
-                  className="flex flex-col justify-between p-6 group hover:border-indigo-300 dark:hover:border-indigo-800"
+                  className="flex flex-col justify-between p-6 group hover:border-orange-300 dark:hover:border-orange-800"
                 >
                   <div className="space-y-4">
                     <div className="flex items-center justify-between">
-                      <div className="h-10 w-10 rounded-xl bg-zinc-100 dark:bg-zinc-800 flex items-center justify-center text-zinc-800 dark:text-zinc-200 group-hover:bg-indigo-50 dark:group-hover:bg-indigo-950/60 group-hover:text-indigo-600 dark:group-hover:text-indigo-400 transition-colors">
+                      <div className="h-10 w-10 rounded-xl bg-zinc-100 dark:bg-zinc-800 flex items-center justify-center text-zinc-800 dark:text-zinc-200 group-hover:bg-orange-50 dark:group-hover:bg-orange-950/60 group-hover:text-orange-600 dark:group-hover:text-orange-400 transition-colors">
                         <Icon className="h-5 w-5" />
                       </div>
                       {isComingSoon ? (
-                        <Badge variant="indigo" className="text-[10px]">
+                        <Badge variant="orange" className="text-[10px]">
                           Coming Soon
                         </Badge>
                       ) : (
@@ -496,7 +496,7 @@ export const LandingPage: React.FC = () => {
                     </div>
 
                     <div className="space-y-1.5">
-                      <CardTitle className="text-base font-semibold group-hover:text-indigo-600 dark:group-hover:text-indigo-400 transition-colors">
+                      <CardTitle className="text-base font-semibold group-hover:text-orange-600 dark:group-hover:text-orange-400 transition-colors">
                         {module.title}
                       </CardTitle>
                       <CardDescription className="text-xs leading-relaxed">
@@ -538,7 +538,7 @@ export const LandingPage: React.FC = () => {
                   className="rounded-2xl border border-zinc-200/80 dark:border-zinc-800 bg-white dark:bg-zinc-900/60 p-6 sm:p-8 space-y-4 shadow-2xs relative"
                 >
                   <div className="flex items-center justify-between">
-                    <div className="h-10 w-10 rounded-xl bg-indigo-50 dark:bg-indigo-950/40 text-indigo-600 dark:text-indigo-400 flex items-center justify-center font-bold">
+                    <div className="h-10 w-10 rounded-xl bg-orange-50 dark:bg-orange-950/40 text-orange-600 dark:text-orange-400 flex items-center justify-center font-bold">
                       <Icon className="h-5 w-5" />
                     </div>
                     <span className="font-mono text-2xl font-bold text-zinc-200 dark:text-zinc-800">
@@ -550,7 +550,7 @@ export const LandingPage: React.FC = () => {
                     <h3 className="text-lg font-semibold text-zinc-900 dark:text-zinc-100">
                       {ws.title}
                     </h3>
-                    <p className="text-xs font-medium text-indigo-600 dark:text-indigo-400">
+                    <p className="text-xs font-medium text-orange-600 dark:text-orange-400">
                       {ws.tagline}
                     </p>
                     <p className="text-xs text-zinc-500 dark:text-zinc-400 leading-relaxed pt-1">
@@ -567,12 +567,12 @@ export const LandingPage: React.FC = () => {
         <section className="py-20 px-4 sm:px-6 lg:px-8 max-w-5xl mx-auto text-center">
           <div className="rounded-3xl border border-zinc-200 dark:border-zinc-800 bg-gradient-to-b from-white via-zinc-50/50 to-zinc-100/50 dark:from-zinc-900 dark:via-zinc-900/90 dark:to-zinc-950 p-8 sm:p-14 shadow-lg space-y-6 relative overflow-hidden">
             <div className="max-w-2xl mx-auto space-y-4">
-              <Badge variant="indigo" className="text-[10px]">
+              <Badge variant="orange" className="text-[10px]">
                 Ready for Clarity?
               </Badge>
               <h2 className="text-3xl sm:text-4xl font-bold tracking-tight text-zinc-900 dark:text-zinc-50">
                 Reclaim Your Attention.{' '}
-                <span className="text-indigo-600 dark:text-indigo-400">Organise Today.</span>
+                <span className="text-orange-600 dark:text-orange-400">Organise Today.</span>
               </h2>
               <p className="text-sm text-zinc-600 dark:text-zinc-400 leading-relaxed">
                 Join thousands of students, builders, and professionals who have consolidated their digital life into LifeOS.
@@ -620,7 +620,7 @@ export const LandingPage: React.FC = () => {
               Organise Your Life. Focus on What Matters.
             </p>
             <span className="inline-block text-[11px] text-zinc-400">
-              Linear Slate &amp; Indigo Architecture
+              Sleek Orange &amp; Black Architecture
             </span>
           </div>
 
@@ -658,15 +658,15 @@ export const LandingPage: React.FC = () => {
             </p>
             <ul className="space-y-1.5">
               <li>
-                <Link to="/design-system" className="hover:text-indigo-600 dark:hover:text-indigo-400 flex items-center gap-1">
+                <Link to="/design-system" className="hover:text-orange-600 dark:hover:text-orange-400 flex items-center gap-1">
                   Design System Spec <ExternalLink className="h-3 w-3" />
                 </Link>
               </li>
               <li>
-                <span className="text-zinc-400">Linear Slate Palette</span>
+                <span className="text-zinc-400">Carbon &amp; Charcoal Surfaces</span>
               </li>
               <li>
-                <span className="text-zinc-400">Electric Indigo Tokens</span>
+                <span className="text-zinc-400">Vibrant Orange Tokens</span>
               </li>
               <li>
                 <span className="text-zinc-400">Stage 2 Routing Active</span>

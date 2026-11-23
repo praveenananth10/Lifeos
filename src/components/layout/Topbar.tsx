@@ -47,7 +47,7 @@ export const Topbar: React.FC<TopbarProps> = ({
   const { title, category } = getPageTitle(location.pathname);
 
   return (
-    <header className="sticky top-0 z-30 flex h-14 w-full items-center justify-between border-b border-zinc-200/80 dark:border-zinc-800/80 bg-white/80 dark:bg-zinc-950/80 px-4 sm:px-6 backdrop-blur-md transition-colors duration-200">
+    <header className="sticky top-0 z-30 flex h-14 w-full items-center justify-between border-b border-zinc-200/80 dark:border-[#27272A] bg-white/80 dark:bg-[#09090B]/80 px-4 sm:px-6 backdrop-blur-md transition-colors duration-200">
       {/* Left: Mobile trigger & Breadcrumbs */}
       <div className="flex items-center gap-3">
         <Button
@@ -90,11 +90,11 @@ export const Topbar: React.FC<TopbarProps> = ({
           <Button
             variant="secondary"
             size="sm"
-            className="h-8 text-xs gap-1.5 border-indigo-200 dark:border-indigo-900/60 text-indigo-600 dark:text-indigo-400 hover:bg-indigo-50/60 dark:hover:bg-indigo-950/30"
+            className="h-8 text-xs gap-1.5 border-orange-200 dark:border-orange-900/60 text-orange-600 dark:text-orange-400 hover:bg-orange-50/60 dark:hover:bg-orange-950/30"
           >
             <Clock className="h-3.5 w-3.5" />
             <span className="hidden sm:inline">Focus</span>
-            <span className="font-mono text-[10px] bg-indigo-100 dark:bg-indigo-900/60 text-indigo-700 dark:text-indigo-300 px-1 rounded">
+            <span className="font-mono text-[10px] bg-orange-100 dark:bg-orange-900/60 text-orange-700 dark:text-orange-300 px-1 rounded">
               {todayFocusMinutes}m
             </span>
           </Button>

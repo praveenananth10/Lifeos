@@ -143,7 +143,7 @@ export const DashboardPage: React.FC = () => {
             <CalendarDays className="h-3.5 w-3.5 text-zinc-400" />
             <span>{formattedDate}</span>
             <span className="text-zinc-300 dark:text-zinc-700">•</span>
-            <span className="text-indigo-600 dark:text-indigo-400 font-medium">
+            <span className="text-orange-600 dark:text-orange-400 font-medium">
               Sprint Week 47
             </span>
           </div>
@@ -196,11 +196,11 @@ export const DashboardPage: React.FC = () => {
 
       {/* QUICK INLINE TASK ADD DRAWER */}
       {showQuickTaskForm && (
-        <Card variant="default" className="p-4 border-indigo-200 dark:border-indigo-900/60 bg-indigo-50/20 dark:bg-indigo-950/10">
+        <Card variant="default" className="p-4 border-orange-200 dark:border-orange-900/60 bg-orange-50/20 dark:bg-orange-950/10">
           <form onSubmit={handleCreateTask} className="space-y-3">
             <div className="flex items-center justify-between">
               <span className="text-xs font-semibold text-zinc-900 dark:text-zinc-100 flex items-center gap-1.5">
-                <Plus className="h-3.5 w-3.5 text-indigo-600 dark:text-indigo-400" />
+                <Plus className="h-3.5 w-3.5 text-orange-600 dark:text-orange-400" />
                 Add Quick Task
               </span>
               <button
@@ -225,7 +225,7 @@ export const DashboardPage: React.FC = () => {
                 <select
                   value={newTaskCategory}
                   onChange={(e) => setNewTaskCategory(e.target.value as TaskCategory)}
-                  className="w-full h-9 rounded-lg px-2.5 text-xs bg-white dark:bg-zinc-900 border border-zinc-200/90 dark:border-zinc-800 text-zinc-800 dark:text-zinc-200 focus:outline-none focus:border-indigo-500"
+                  className="w-full h-9 rounded-lg px-2.5 text-xs bg-white dark:bg-zinc-900 border border-zinc-200/90 dark:border-zinc-800 text-zinc-800 dark:text-zinc-200 focus:outline-none focus:border-orange-500"
                 >
                   <option value="Work">Work</option>
                   <option value="Personal">Personal</option>
@@ -238,7 +238,7 @@ export const DashboardPage: React.FC = () => {
                 <select
                   value={newTaskPriority}
                   onChange={(e) => setNewTaskPriority(e.target.value as TaskPriority)}
-                  className="w-full h-9 rounded-lg px-2.5 text-xs bg-white dark:bg-zinc-900 border border-zinc-200/90 dark:border-zinc-800 text-zinc-800 dark:text-zinc-200 focus:outline-none focus:border-indigo-500"
+                  className="w-full h-9 rounded-lg px-2.5 text-xs bg-white dark:bg-zinc-900 border border-zinc-200/90 dark:border-zinc-800 text-zinc-800 dark:text-zinc-200 focus:outline-none focus:border-orange-500"
                 >
                   <option value="low">Low Priority</option>
                   <option value="medium">Medium Priority</option>
@@ -264,7 +264,7 @@ export const DashboardPage: React.FC = () => {
               <span className="text-xs font-medium text-zinc-500 dark:text-zinc-400">
                 Tasks Completed
               </span>
-              <div className="h-8 w-8 rounded-lg bg-indigo-50 dark:bg-indigo-950/60 text-indigo-600 dark:text-indigo-400 flex items-center justify-center">
+              <div className="h-8 w-8 rounded-lg bg-orange-50 dark:bg-orange-950/60 text-orange-600 dark:text-orange-400 flex items-center justify-center">
                 <CheckSquare className="h-4 w-4" />
               </div>
             </div>
@@ -274,7 +274,7 @@ export const DashboardPage: React.FC = () => {
                 {completedTasksCount}
                 <span className="text-sm font-normal text-zinc-400"> / {totalTasksCount}</span>
               </div>
-              <Badge variant={pendingTasksCount === 0 ? 'success' : 'indigo'} className="text-[10px]">
+              <Badge variant={pendingTasksCount === 0 ? 'success' : 'orange'} className="text-[10px]">
                 {pendingTasksCount} pending
               </Badge>
             </div>
@@ -282,7 +282,7 @@ export const DashboardPage: React.FC = () => {
             <div className="space-y-1">
               <div className="h-1.5 w-full bg-zinc-100 dark:bg-zinc-800 rounded-full overflow-hidden">
                 <div
-                  className="h-full bg-indigo-600 dark:bg-indigo-500 rounded-full transition-all duration-300"
+                  className="h-full bg-orange-600 dark:bg-orange-500 rounded-full transition-all duration-300"
                   style={{ width: `${taskProgressPercent}%` }}
                 />
               </div>
@@ -378,7 +378,7 @@ export const DashboardPage: React.FC = () => {
               <span className="text-xs font-medium text-zinc-500 dark:text-zinc-400">
                 Active Goals &amp; OKRs
               </span>
-              <div className="h-8 w-8 rounded-lg bg-indigo-50 dark:bg-indigo-950/60 text-indigo-600 dark:text-indigo-400 flex items-center justify-center">
+              <div className="h-8 w-8 rounded-lg bg-orange-50 dark:bg-orange-950/60 text-orange-600 dark:text-orange-400 flex items-center justify-center">
                 <Target className="h-4 w-4" />
               </div>
             </div>
@@ -388,7 +388,7 @@ export const DashboardPage: React.FC = () => {
                 {averageGoalProgress}%
                 <span className="text-sm font-normal text-zinc-400"> avg</span>
               </div>
-              <Badge variant="indigo" className="text-[10px]">
+              <Badge variant="orange" className="text-[10px]">
                 {goals.length} Goals
               </Badge>
             </div>
@@ -396,7 +396,7 @@ export const DashboardPage: React.FC = () => {
             <div className="space-y-1">
               <div className="h-1.5 w-full bg-zinc-100 dark:bg-zinc-800 rounded-full overflow-hidden">
                 <div
-                  className="h-full bg-indigo-600 dark:bg-indigo-500 rounded-full transition-all duration-300"
+                  className="h-full bg-orange-600 dark:bg-orange-500 rounded-full transition-all duration-300"
                   style={{ width: `${averageGoalProgress}%` }}
                 />
               </div>
@@ -419,7 +419,7 @@ export const DashboardPage: React.FC = () => {
               <div>
                 <div className="flex items-center gap-2">
                   <CardTitle className="text-base font-semibold">Today's Priorities</CardTitle>
-                  <Badge variant="indigo" className="text-[10px]">
+                  <Badge variant="orange" className="text-[10px]">
                     {pendingTasksCount} remaining
                   </Badge>
                 </div>
@@ -428,7 +428,7 @@ export const DashboardPage: React.FC = () => {
                 </CardDescription>
               </div>
 
-              <Link to="/tasks" className="text-xs text-indigo-600 dark:text-indigo-400 hover:underline flex items-center gap-1 font-medium">
+              <Link to="/tasks" className="text-xs text-orange-600 dark:text-orange-400 hover:underline flex items-center gap-1 font-medium">
                 View all <ChevronRight className="h-3 w-3" />
               </Link>
             </CardHeader>
@@ -454,7 +454,7 @@ export const DashboardPage: React.FC = () => {
                         className={`h-4 w-4 rounded mt-0.5 flex items-center justify-center transition-colors shrink-0 ${
                           task.completed
                             ? 'bg-emerald-500 text-white'
-                            : 'border border-zinc-300 dark:border-zinc-600 hover:border-indigo-500'
+                            : 'border border-zinc-300 dark:border-zinc-600 hover:border-orange-500'
                         }`}
                       >
                         {task.completed && <Check className="h-3 w-3 stroke-[3]" />}
@@ -507,7 +507,7 @@ export const DashboardPage: React.FC = () => {
                 variant="ghost"
                 size="sm"
                 onClick={() => setShowQuickTaskForm(true)}
-                className="h-7 text-xs text-indigo-600 dark:text-indigo-400"
+                className="h-7 text-xs text-orange-600 dark:text-orange-400"
               >
                 + Add another task
               </Button>
@@ -530,7 +530,7 @@ export const DashboardPage: React.FC = () => {
                 </CardDescription>
               </div>
 
-              <Link to="/habits" className="text-xs text-indigo-600 dark:text-indigo-400 hover:underline flex items-center gap-1 font-medium">
+              <Link to="/habits" className="text-xs text-orange-600 dark:text-orange-400 hover:underline flex items-center gap-1 font-medium">
                 All habits <ChevronRight className="h-3 w-3" />
               </Link>
             </CardHeader>
@@ -591,13 +591,13 @@ export const DashboardPage: React.FC = () => {
         {/* RIGHT COLUMN: Focus Shortcut, Upcoming Schedule & Goals (5 cols) */}
         <div className="lg:col-span-5 space-y-6">
           {/* FOCUS TIMER SHORTCUT CARD */}
-          <Card variant="default" className="border-indigo-200/80 dark:border-indigo-900/60 bg-gradient-to-br from-indigo-50/30 via-white to-white dark:from-indigo-950/20 dark:via-zinc-900 dark:to-zinc-900">
+          <Card variant="default" className="border-orange-200/80 dark:border-orange-900/60 bg-gradient-to-br from-orange-50/30 via-white to-white dark:from-orange-950/20 dark:via-zinc-900 dark:to-zinc-900">
             <CardHeader className="pb-2">
               <div className="flex items-center justify-between">
-                <span className="text-xs font-medium text-indigo-600 dark:text-indigo-400 flex items-center gap-1.5">
+                <span className="text-xs font-medium text-orange-600 dark:text-orange-400 flex items-center gap-1.5">
                   <Clock className="h-3.5 w-3.5" /> Pomodoro Engine
                 </span>
-                <Badge variant="indigo" className="text-[10px]">
+                <Badge variant="orange" className="text-[10px]">
                   Today: {todayFocusMinutes}m
                 </Badge>
               </div>
@@ -619,7 +619,7 @@ export const DashboardPage: React.FC = () => {
                     25:00 <span className="text-xs font-normal text-zinc-400">/ 5:00 break</span>
                   </div>
                 </div>
-                <div className="h-10 w-10 rounded-full bg-indigo-50 dark:bg-indigo-950/60 text-indigo-600 dark:text-indigo-400 flex items-center justify-center">
+                <div className="h-10 w-10 rounded-full bg-orange-50 dark:bg-orange-950/60 text-orange-600 dark:text-orange-400 flex items-center justify-center">
                   <Hourglass className="h-5 w-5 animate-pulse" />
                 </div>
               </div>
@@ -646,7 +646,7 @@ export const DashboardPage: React.FC = () => {
                   Time-blocked commitments &amp; deadlines
                 </CardDescription>
               </div>
-              <Link to="/calendar" className="text-xs text-indigo-600 dark:text-indigo-400 hover:underline flex items-center gap-1 font-medium">
+              <Link to="/calendar" className="text-xs text-orange-600 dark:text-orange-400 hover:underline flex items-center gap-1 font-medium">
                 Calendar <ChevronRight className="h-3 w-3" />
               </Link>
             </CardHeader>
@@ -669,7 +669,7 @@ export const DashboardPage: React.FC = () => {
                       <Badge
                         variant={
                           event.type === 'focus'
-                            ? 'indigo'
+                            ? 'orange'
                             : event.type === 'deadline'
                             ? 'danger'
                             : 'secondary'
@@ -702,7 +702,7 @@ export const DashboardPage: React.FC = () => {
                   OKR milestones &amp; life architecture
                 </CardDescription>
               </div>
-              <Link to="/goals" className="text-xs text-indigo-600 dark:text-indigo-400 hover:underline flex items-center gap-1 font-medium">
+              <Link to="/goals" className="text-xs text-orange-600 dark:text-orange-400 hover:underline flex items-center gap-1 font-medium">
                 Goals <ChevronRight className="h-3 w-3" />
               </Link>
             </CardHeader>
@@ -727,14 +727,14 @@ export const DashboardPage: React.FC = () => {
                         <span className="text-xs font-semibold text-zinc-900 dark:text-zinc-100 line-clamp-1">
                           {goal.title}
                         </span>
-                        <span className="text-[10px] font-mono font-medium text-indigo-600 dark:text-indigo-400">
+                        <span className="text-[10px] font-mono font-medium text-orange-600 dark:text-orange-400">
                           {percent}%
                         </span>
                       </div>
 
                       <div className="h-1.5 w-full bg-zinc-100 dark:bg-zinc-800 rounded-full overflow-hidden">
                         <div
-                          className="h-full bg-indigo-600 dark:bg-indigo-500 rounded-full transition-all duration-300"
+                          className="h-full bg-orange-600 dark:bg-orange-500 rounded-full transition-all duration-300"
                           style={{ width: `${percent}%` }}
                         />
                       </div>
@@ -789,7 +789,7 @@ export const DashboardPage: React.FC = () => {
                 <select
                   value={expenseCategory}
                   onChange={(e) => setExpenseCategory(e.target.value)}
-                  className="w-full h-9 rounded-lg px-3 text-xs bg-white dark:bg-zinc-900 border border-zinc-200/90 dark:border-zinc-800 text-zinc-800 dark:text-zinc-200 focus:outline-none focus:border-indigo-500"
+                  className="w-full h-9 rounded-lg px-3 text-xs bg-white dark:bg-zinc-900 border border-zinc-200/90 dark:border-zinc-800 text-zinc-800 dark:text-zinc-200 focus:outline-none focus:border-orange-500"
                 >
                   <option value="Groceries">Groceries</option>
                   <option value="Dining">Dining</option>
@@ -819,7 +819,7 @@ export const DashboardPage: React.FC = () => {
           <Card className="w-full max-w-sm p-5 space-y-4 bg-white dark:bg-zinc-900 shadow-xl border-zinc-200 dark:border-zinc-800">
             <div className="flex items-center justify-between">
               <CardTitle className="text-base font-semibold flex items-center gap-2">
-                <FilePlus2 className="h-4 w-4 text-indigo-500" /> Quick Note
+                <FilePlus2 className="h-4 w-4 text-orange-500" /> Quick Note
               </CardTitle>
               <button
                 onClick={() => setShowNoteModal(false)}
@@ -844,7 +844,7 @@ export const DashboardPage: React.FC = () => {
                   rows={4}
                   value={noteContent}
                   onChange={(e) => setNoteContent(e.target.value)}
-                  className="w-full rounded-lg p-3 text-xs bg-white dark:bg-zinc-900 border border-zinc-200/90 dark:border-zinc-800 text-zinc-800 dark:text-zinc-200 focus:outline-none focus:border-indigo-500 resize-none"
+                  className="w-full rounded-lg p-3 text-xs bg-white dark:bg-zinc-900 border border-zinc-200/90 dark:border-zinc-800 text-zinc-800 dark:text-zinc-200 focus:outline-none focus:border-orange-500 resize-none"
                 />
               </div>
 

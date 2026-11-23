@@ -29,13 +29,13 @@ export const SessionHistoryList: React.FC<SessionHistoryListProps> = ({
             <span className="text-xs font-medium text-zinc-500 dark:text-zinc-400">
               Focused Today
             </span>
-            <div className="h-7 w-7 rounded-lg bg-indigo-50 dark:bg-indigo-950/50 text-indigo-600 dark:text-indigo-400 flex items-center justify-center">
+            <div className="h-7 w-7 rounded-lg bg-orange-50 dark:bg-orange-950/50 text-orange-600 dark:text-orange-400 flex items-center justify-center">
               <Clock className="h-3.5 w-3.5" />
             </div>
           </div>
           <div className="mt-3">
             <div className="flex items-baseline gap-2">
-              <span className="text-2xl font-bold font-mono text-indigo-600 dark:text-indigo-400">
+              <span className="text-2xl font-bold font-mono text-orange-600 dark:text-orange-400">
                 {todayFocusMinutes}
               </span>
               <span className="text-xs text-zinc-400">minutes logged</span>
@@ -97,7 +97,7 @@ export const SessionHistoryList: React.FC<SessionHistoryListProps> = ({
       <Card variant="default">
         <CardHeader className="pb-3">
           <CardTitle className="text-sm font-semibold flex items-center gap-2">
-            <Sparkles className="h-4 w-4 text-indigo-500" />
+            <Sparkles className="h-4 w-4 text-orange-500" />
             Focus Session History
           </CardTitle>
           <p className="text-xs text-zinc-500 dark:text-zinc-400">
@@ -137,7 +137,7 @@ export const SessionHistoryList: React.FC<SessionHistoryListProps> = ({
                       </h4>
                       <div className="flex items-center gap-1.5 text-[10px] text-zinc-400">
                         <Badge
-                          variant={session.mode === 'pomodoro' ? 'indigo' : 'secondary'}
+                          variant={session.mode === 'pomodoro' ? 'orange' : 'secondary'}
                           className="text-[9px] px-1.5 py-0 capitalize"
                         >
                           {session.mode}
@@ -151,7 +151,7 @@ export const SessionHistoryList: React.FC<SessionHistoryListProps> = ({
                   </div>
 
                   <div className="flex items-center gap-3 shrink-0">
-                    <span className="font-mono font-bold text-indigo-600 dark:text-indigo-400">
+                    <span className="font-mono font-bold text-orange-600 dark:text-orange-400">
                       {session.durationMinutes}m
                     </span>
 

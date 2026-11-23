@@ -106,7 +106,7 @@ const TaskModalForm: React.FC<TaskModalFormProps> = ({
           rows={3}
           value={description}
           onChange={(e) => setDescription(e.target.value)}
-          className="w-full rounded-lg p-3 text-xs bg-white dark:bg-zinc-900 border border-zinc-200/90 dark:border-zinc-800 text-zinc-900 dark:text-zinc-100 placeholder:text-zinc-400 dark:placeholder:text-zinc-500 focus:outline-none focus:border-indigo-500 dark:focus:border-indigo-400 focus:ring-2 focus:ring-indigo-500/20 resize-none transition-all"
+          className="w-full rounded-lg p-3 text-xs bg-white dark:bg-zinc-900 border border-zinc-200/90 dark:border-zinc-800 text-zinc-900 dark:text-zinc-100 placeholder:text-zinc-400 dark:placeholder:text-zinc-500 focus:outline-none focus:border-orange-500 dark:focus:border-orange-400 focus:ring-2 focus:ring-orange-500/20 resize-none transition-all"
         />
       </div>
 
@@ -119,7 +119,7 @@ const TaskModalForm: React.FC<TaskModalFormProps> = ({
           <select
             value={category}
             onChange={(e) => setCategory(e.target.value as TaskCategory)}
-            className="w-full h-9 rounded-lg px-3 text-xs bg-white dark:bg-zinc-900 border border-zinc-200/90 dark:border-zinc-800 text-zinc-900 dark:text-zinc-100 focus:outline-none focus:border-indigo-500 transition-colors"
+            className="w-full h-9 rounded-lg px-3 text-xs bg-white dark:bg-zinc-900 border border-zinc-200/90 dark:border-zinc-800 text-zinc-900 dark:text-zinc-100 focus:outline-none focus:border-orange-500 transition-colors"
           >
             {CATEGORIES.map((cat) => (
               <option key={cat} value={cat}>
@@ -162,21 +162,21 @@ const TaskModalForm: React.FC<TaskModalFormProps> = ({
             <button
               type="button"
               onClick={() => setRelativeDate(0)}
-              className="text-[10px] text-zinc-500 hover:text-indigo-600 dark:hover:text-indigo-400 px-1.5 py-0.5 rounded bg-zinc-100 dark:bg-zinc-800 cursor-pointer"
+              className="text-[10px] text-zinc-500 hover:text-orange-600 dark:hover:text-orange-400 px-1.5 py-0.5 rounded bg-zinc-100 dark:bg-zinc-800 cursor-pointer"
             >
               Today
             </button>
             <button
               type="button"
               onClick={() => setRelativeDate(1)}
-              className="text-[10px] text-zinc-500 hover:text-indigo-600 dark:hover:text-indigo-400 px-1.5 py-0.5 rounded bg-zinc-100 dark:bg-zinc-800 cursor-pointer"
+              className="text-[10px] text-zinc-500 hover:text-orange-600 dark:hover:text-orange-400 px-1.5 py-0.5 rounded bg-zinc-100 dark:bg-zinc-800 cursor-pointer"
             >
               Tomorrow
             </button>
             <button
               type="button"
               onClick={() => setRelativeDate(7)}
-              className="text-[10px] text-zinc-500 hover:text-indigo-600 dark:hover:text-indigo-400 px-1.5 py-0.5 rounded bg-zinc-100 dark:bg-zinc-800 cursor-pointer"
+              className="text-[10px] text-zinc-500 hover:text-orange-600 dark:hover:text-orange-400 px-1.5 py-0.5 rounded bg-zinc-100 dark:bg-zinc-800 cursor-pointer"
             >
               +1 Week
             </button>
@@ -186,7 +186,7 @@ const TaskModalForm: React.FC<TaskModalFormProps> = ({
           type="date"
           value={dueDate}
           onChange={(e) => setDueDate(e.target.value)}
-          className="w-full h-9 rounded-lg px-3 text-xs bg-white dark:bg-zinc-900 border border-zinc-200/90 dark:border-zinc-800 text-zinc-900 dark:text-zinc-100 focus:outline-none focus:border-indigo-500"
+          className="w-full h-9 rounded-lg px-3 text-xs bg-white dark:bg-zinc-900 border border-zinc-200/90 dark:border-zinc-800 text-zinc-900 dark:text-zinc-100 focus:outline-none focus:border-orange-500"
         />
       </div>
 

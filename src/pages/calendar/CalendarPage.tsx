@@ -163,7 +163,7 @@ export const CalendarPage: React.FC = () => {
       <div className="flex flex-col sm:flex-row sm:items-center sm:justify-between gap-4 pb-4 border-b border-zinc-200/60 dark:border-zinc-800/60">
         <div>
           <div className="flex items-center gap-2">
-            <div className="h-8 w-8 rounded-lg bg-indigo-50 dark:bg-indigo-950/60 text-indigo-600 dark:text-indigo-400 flex items-center justify-center">
+            <div className="h-8 w-8 rounded-lg bg-orange-50 dark:bg-orange-950/60 text-orange-600 dark:text-orange-400 flex items-center justify-center">
               <CalendarIcon className="h-4 w-4" />
             </div>
             <h1 className="text-xl sm:text-2xl font-bold tracking-tight text-zinc-900 dark:text-zinc-50">
@@ -259,10 +259,10 @@ export const CalendarPage: React.FC = () => {
             <CardHeader className="flex flex-row items-center justify-between pb-3">
               <div>
                 <CardTitle className="text-sm font-semibold flex items-center gap-2">
-                  <Clock className="h-4 w-4 text-indigo-500" />
+                  <Clock className="h-4 w-4 text-orange-500" />
                   Agenda for {formattedInspectorDate}
                   {selectedDate === todayDate && (
-                    <Badge variant="indigo" className="text-[10px]">
+                    <Badge variant="orange" className="text-[10px]">
                       Today
                     </Badge>
                   )}
@@ -297,7 +297,7 @@ export const CalendarPage: React.FC = () => {
                 {/* Events list */}
                 <div className="space-y-2">
                   <h4 className="text-xs font-semibold text-zinc-600 dark:text-zinc-300 flex items-center gap-1.5 pb-1 border-b border-zinc-100 dark:border-zinc-800">
-                    <Sparkles className="h-3.5 w-3.5 text-indigo-500" />
+                    <Sparkles className="h-3.5 w-3.5 text-orange-500" />
                     Scheduled Events ({selectedDayEvents.length})
                   </h4>
 
@@ -313,7 +313,7 @@ export const CalendarPage: React.FC = () => {
                       >
                         <div>
                           <div className="flex items-center gap-2">
-                            <span className="font-mono text-xs font-bold text-indigo-600 dark:text-indigo-400">
+                            <span className="font-mono text-xs font-bold text-orange-600 dark:text-orange-400">
                               {evt.startTime} – {evt.endTime}
                             </span>
                             <Badge
@@ -322,7 +322,7 @@ export const CalendarPage: React.FC = () => {
                                   ? 'success'
                                   : evt.type === 'deadline'
                                   ? 'danger'
-                                  : 'indigo'
+                                  : 'orange'
                               }
                               className="text-[9px] capitalize"
                             >

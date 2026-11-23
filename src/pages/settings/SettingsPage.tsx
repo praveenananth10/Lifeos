@@ -124,7 +124,7 @@ export const SettingsPage: React.FC = () => {
       <div className="flex flex-col sm:flex-row sm:items-center sm:justify-between gap-4 pb-4 border-b border-zinc-200/60 dark:border-zinc-800/60">
         <div>
           <div className="flex items-center gap-2">
-            <div className="h-8 w-8 rounded-lg bg-indigo-50 dark:bg-indigo-950/60 text-indigo-600 dark:text-indigo-400 flex items-center justify-center">
+            <div className="h-8 w-8 rounded-lg bg-orange-50 dark:bg-orange-950/60 text-orange-600 dark:text-orange-400 flex items-center justify-center">
               <Settings className="h-4 w-4" />
             </div>
             <h1 className="text-xl sm:text-2xl font-bold tracking-tight text-zinc-900 dark:text-zinc-50">
@@ -146,7 +146,7 @@ export const SettingsPage: React.FC = () => {
         <CardHeader className="pb-3">
           <div className="flex items-center justify-between">
             <div className="flex items-center gap-2">
-              <User className="h-4 w-4 text-indigo-600 dark:text-indigo-400" />
+              <User className="h-4 w-4 text-orange-600 dark:text-orange-400" />
               <CardTitle className="text-sm font-semibold">User Profile &amp; Identity</CardTitle>
             </div>
             {isProfileSaved && (
@@ -164,7 +164,7 @@ export const SettingsPage: React.FC = () => {
           <form onSubmit={handleSaveProfile} className="space-y-4">
             <div className="flex items-center gap-4 pb-2">
               {/* Live Avatar */}
-              <div className="h-14 w-14 rounded-2xl bg-indigo-600 text-white flex items-center justify-center text-lg font-bold shadow-md shrink-0">
+              <div className="h-14 w-14 rounded-2xl bg-orange-600 text-white flex items-center justify-center text-lg font-bold shadow-md shrink-0">
                 {userInitials}
               </div>
               <div className="space-y-0.5">
@@ -212,7 +212,7 @@ export const SettingsPage: React.FC = () => {
       <Card variant="default">
         <CardHeader className="pb-3">
           <div className="flex items-center gap-2">
-            <Palette className="h-4 w-4 text-indigo-600 dark:text-indigo-400" />
+            <Palette className="h-4 w-4 text-orange-600 dark:text-orange-400" />
             <CardTitle className="text-sm font-semibold">Appearance &amp; Color System</CardTitle>
           </div>
           <CardDescription className="text-xs">
@@ -228,12 +228,12 @@ export const SettingsPage: React.FC = () => {
               className={cn(
                 'p-4 rounded-xl border transition-all cursor-pointer space-y-3 relative',
                 theme === 'light'
-                  ? 'border-indigo-600 dark:border-indigo-500 ring-2 ring-indigo-500/20 bg-indigo-50/15'
+                  ? 'border-orange-600 dark:border-orange-500 ring-2 ring-orange-500/20 bg-orange-50/15'
                   : 'border-zinc-200 dark:border-zinc-800 hover:border-zinc-300 dark:hover:border-zinc-700'
               )}
             >
               {theme === 'light' && (
-                <div className="absolute top-3 right-3 h-5 w-5 rounded-full bg-indigo-600 text-white flex items-center justify-center text-[10px]">
+                <div className="absolute top-3 right-3 h-5 w-5 rounded-full bg-orange-600 text-white flex items-center justify-center text-[10px]">
                   <Check className="h-3 w-3 stroke-[3]" />
                 </div>
               )}
@@ -253,7 +253,7 @@ export const SettingsPage: React.FC = () => {
                 <div className="h-2 w-20 rounded bg-zinc-900" />
                 <div className="h-1.5 w-32 rounded bg-zinc-300" />
                 <div className="h-5 rounded bg-white border border-zinc-200 flex items-center px-2">
-                  <div className="h-2 w-12 rounded bg-indigo-600" />
+                  <div className="h-2 w-12 rounded bg-orange-600" />
                 </div>
               </div>
             </div>
@@ -264,12 +264,12 @@ export const SettingsPage: React.FC = () => {
               className={cn(
                 'p-4 rounded-xl border transition-all cursor-pointer space-y-3 relative',
                 theme === 'dark'
-                  ? 'border-indigo-500 ring-2 ring-indigo-500/20 bg-indigo-950/20'
+                  ? 'border-orange-500 ring-2 ring-orange-500/20 bg-orange-950/20'
                   : 'border-zinc-200 dark:border-zinc-800 hover:border-zinc-300 dark:hover:border-zinc-700'
               )}
             >
               {theme === 'dark' && (
-                <div className="absolute top-3 right-3 h-5 w-5 rounded-full bg-indigo-500 text-white flex items-center justify-center text-[10px]">
+                <div className="absolute top-3 right-3 h-5 w-5 rounded-full bg-orange-500 text-white flex items-center justify-center text-[10px]">
                   <Check className="h-3 w-3 stroke-[3]" />
                 </div>
               )}
@@ -279,17 +279,17 @@ export const SettingsPage: React.FC = () => {
                   <Moon className="h-3.5 w-3.5" />
                 </div>
                 <div>
-                  <h4 className="text-xs font-semibold text-zinc-100">Deep Obsidian</h4>
-                  <span className="text-[10px] text-zinc-400">Linear Dark Mode</span>
+                  <h4 className="text-xs font-semibold text-zinc-100">Deep Carbon Black</h4>
+                  <span className="text-[10px] text-zinc-400">Orange &amp; Black Palette</span>
                 </div>
               </div>
 
               {/* Visual Preview Swatch */}
-              <div className="rounded-lg border border-zinc-800 bg-[#09090B] p-3 space-y-2">
+              <div className="rounded-lg border border-[#27272A] bg-[#09090B] p-3 space-y-2">
                 <div className="h-2 w-20 rounded bg-zinc-100" />
                 <div className="h-1.5 w-32 rounded bg-zinc-700" />
-                <div className="h-5 rounded bg-[#121215] border border-zinc-800 flex items-center px-2">
-                  <div className="h-2 w-12 rounded bg-indigo-500" />
+                <div className="h-5 rounded bg-[#121215] border border-[#27272A] flex items-center px-2">
+                  <div className="h-2 w-12 rounded bg-orange-500" />
                 </div>
               </div>
             </div>
@@ -302,7 +302,7 @@ export const SettingsPage: React.FC = () => {
         <CardHeader className="pb-3">
           <div className="flex items-center justify-between">
             <div className="flex items-center gap-2">
-              <SlidersHorizontal className="h-4 w-4 text-indigo-600 dark:text-indigo-400" />
+              <SlidersHorizontal className="h-4 w-4 text-orange-600 dark:text-orange-400" />
               <CardTitle className="text-sm font-semibold">Workspace Defaults &amp; Budget</CardTitle>
             </div>
             {isBudgetSaved && (
@@ -346,7 +346,7 @@ export const SettingsPage: React.FC = () => {
                     setIsBudgetSaved(true);
                     setTimeout(() => setIsBudgetSaved(false), 2000);
                   }}
-                  className="px-2 py-0.5 rounded text-xs font-mono font-medium border border-zinc-200 dark:border-zinc-800 hover:border-indigo-500 text-zinc-700 dark:text-zinc-300 cursor-pointer"
+                  className="px-2 py-0.5 rounded text-xs font-mono font-medium border border-zinc-200 dark:border-zinc-800 hover:border-orange-500 text-zinc-700 dark:text-zinc-300 cursor-pointer"
                 >
                   ${amt.toLocaleString()}
                 </button>
@@ -360,7 +360,7 @@ export const SettingsPage: React.FC = () => {
       <Card variant="default" className="border-zinc-200/90 dark:border-zinc-800">
         <CardHeader className="pb-3">
           <div className="flex items-center gap-2">
-            <Database className="h-4 w-4 text-indigo-600 dark:text-indigo-400" />
+            <Database className="h-4 w-4 text-orange-600 dark:text-orange-400" />
             <CardTitle className="text-sm font-semibold">Data &amp; Backup Management</CardTitle>
           </div>
           <CardDescription className="text-xs">
@@ -444,7 +444,7 @@ export const SettingsPage: React.FC = () => {
       <Card variant="default">
         <CardHeader className="pb-3">
           <div className="flex items-center gap-2">
-            <Cloud className="h-4 w-4 text-indigo-600 dark:text-indigo-400" />
+            <Cloud className="h-4 w-4 text-orange-600 dark:text-orange-400" />
             <CardTitle className="text-sm font-semibold">Cloud Sync &amp; Integrations</CardTitle>
           </div>
           <CardDescription className="text-xs">
@@ -476,7 +476,7 @@ export const SettingsPage: React.FC = () => {
           {/* Row 2: Supabase */}
           <div className="flex items-center justify-between p-3 rounded-xl border border-zinc-200/80 dark:border-zinc-800 bg-white dark:bg-zinc-900 text-xs">
             <div className="flex items-center gap-2.5">
-              <div className="h-7 w-7 rounded-lg bg-indigo-50 dark:bg-indigo-950/60 text-indigo-600 dark:text-indigo-400 flex items-center justify-center">
+              <div className="h-7 w-7 rounded-lg bg-orange-50 dark:bg-orange-950/60 text-orange-600 dark:text-orange-400 flex items-center justify-center">
                 <Cloud className="h-4 w-4" />
               </div>
               <div>
@@ -493,7 +493,7 @@ export const SettingsPage: React.FC = () => {
               </div>
             </div>
             <Badge
-              variant={isSupabaseConfigured && user?.isAuthenticated ? 'success' : 'indigo'}
+              variant={isSupabaseConfigured && user?.isAuthenticated ? 'success' : 'orange'}
               dot={isSupabaseConfigured && user?.isAuthenticated}
               className="text-[10px]"
             >

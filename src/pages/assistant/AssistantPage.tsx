@@ -159,7 +159,7 @@ export const AssistantPage: React.FC = () => {
       <div className="flex flex-col sm:flex-row sm:items-center sm:justify-between gap-4 pb-4 border-b border-zinc-200/60 dark:border-zinc-800/60">
         <div>
           <div className="flex items-center gap-2">
-            <div className="h-8 w-8 rounded-lg bg-indigo-50 dark:bg-indigo-950/60 text-indigo-600 dark:text-indigo-400 flex items-center justify-center shadow-2xs">
+            <div className="h-8 w-8 rounded-lg bg-orange-50 dark:bg-orange-950/60 text-orange-600 dark:text-orange-400 flex items-center justify-center shadow-2xs">
               <Sparkles className="h-4 w-4" />
             </div>
             <h1 className="text-xl sm:text-2xl font-bold tracking-tight text-zinc-900 dark:text-zinc-50">
@@ -202,7 +202,7 @@ export const AssistantPage: React.FC = () => {
           <div>
             <div className="flex items-center justify-between text-xs text-zinc-500 dark:text-zinc-400 mb-2">
               <span className="flex items-center gap-1.5 font-medium">
-                <CheckSquare className="h-3.5 w-3.5 text-indigo-500" /> Priority Focus
+                <CheckSquare className="h-3.5 w-3.5 text-orange-500" /> Priority Focus
               </span>
               <Badge
                 variant={insights.priorityFocus.urgentCount > 0 ? 'danger' : 'secondary'}
@@ -290,9 +290,9 @@ export const AssistantPage: React.FC = () => {
           <div>
             <div className="flex items-center justify-between text-xs text-zinc-500 dark:text-zinc-400 mb-2">
               <span className="flex items-center gap-1.5 font-medium">
-                <Target className="h-3.5 w-3.5 text-indigo-500" /> Goal Velocity
+                <Target className="h-3.5 w-3.5 text-orange-500" /> Goal Velocity
               </span>
-              <Badge variant="indigo" className="text-[10px]">
+              <Badge variant="orange" className="text-[10px]">
                 {insights.goalVelocity.averageProgress}% Progress
               </Badge>
             </div>
@@ -302,7 +302,7 @@ export const AssistantPage: React.FC = () => {
           </div>
           <div className="mt-3 pt-2.5 border-t border-zinc-100 dark:border-zinc-800/80 flex items-center justify-between text-[11px] text-zinc-500 dark:text-zinc-400">
             <span>Today&apos;s Deep Focus</span>
-            <span className="font-mono font-medium text-indigo-600 dark:text-indigo-400">
+            <span className="font-mono font-medium text-orange-600 dark:text-orange-400">
               {insights.focusMomentum.todayMinutes} mins
             </span>
           </div>
@@ -314,7 +314,7 @@ export const AssistantPage: React.FC = () => {
         {/* Chat Header Bar */}
         <div className="px-4 py-3 border-b border-zinc-200/60 dark:border-zinc-800/60 flex items-center justify-between">
           <div className="flex items-center gap-2">
-            <div className="h-6 w-6 rounded-md bg-indigo-50 dark:bg-indigo-950/60 text-indigo-600 dark:text-indigo-400 flex items-center justify-center">
+            <div className="h-6 w-6 rounded-md bg-orange-50 dark:bg-orange-950/60 text-orange-600 dark:text-orange-400 flex items-center justify-center">
               <Bot className="h-3.5 w-3.5" />
             </div>
             <span className="text-xs font-semibold text-zinc-900 dark:text-zinc-100">
@@ -347,7 +347,7 @@ export const AssistantPage: React.FC = () => {
                 className={`flex gap-3 ${isUser ? 'justify-end' : 'justify-start'}`}
               >
                 {!isUser && (
-                  <div className="h-7 w-7 rounded-lg bg-indigo-600 text-white flex items-center justify-center shrink-0 shadow-2xs mt-0.5">
+                  <div className="h-7 w-7 rounded-lg bg-orange-600 text-white flex items-center justify-center shrink-0 shadow-2xs mt-0.5">
                     <Sparkles className="h-3.5 w-3.5" />
                   </div>
                 )}
@@ -355,7 +355,7 @@ export const AssistantPage: React.FC = () => {
                 <div
                   className={`max-w-[85%] sm:max-w-[75%] rounded-2xl px-4 py-3 text-xs leading-relaxed shadow-2xs ${
                     isUser
-                      ? 'bg-indigo-600 text-white rounded-br-xs'
+                      ? 'bg-orange-600 text-white rounded-br-xs'
                       : 'bg-zinc-50 dark:bg-zinc-800/80 text-zinc-800 dark:text-zinc-200 border border-zinc-200/70 dark:border-zinc-700/60 rounded-bl-xs'
                   }`}
                 >
@@ -384,13 +384,13 @@ export const AssistantPage: React.FC = () => {
                   {/* Suggestion Task Action Card */}
                   {msg.suggestedTask && (
                     <div className="mt-3 pt-2.5 border-t border-zinc-200/70 dark:border-zinc-700/60">
-                      <div className="p-2.5 rounded-xl bg-white dark:bg-zinc-900 border border-indigo-200/80 dark:border-indigo-900/50 flex flex-col sm:flex-row sm:items-center justify-between gap-2 shadow-2xs">
+                      <div className="p-2.5 rounded-xl bg-white dark:bg-zinc-900 border border-orange-200/80 dark:border-orange-900/50 flex flex-col sm:flex-row sm:items-center justify-between gap-2 shadow-2xs">
                         <div className="min-w-0">
                           <div className="flex items-center gap-1.5 mb-0.5">
-                            <span className="text-[10px] font-semibold text-indigo-600 dark:text-indigo-400 uppercase tracking-wider flex items-center gap-1">
+                            <span className="text-[10px] font-semibold text-orange-600 dark:text-orange-400 uppercase tracking-wider flex items-center gap-1">
                               <Zap className="h-2.5 w-2.5" /> Action Recommendation
                             </span>
-                            <Badge variant="indigo" className="text-[9px] px-1 py-0">
+                            <Badge variant="orange" className="text-[9px] px-1 py-0">
                               {msg.suggestedTask.priority}
                             </Badge>
                           </div>
@@ -423,7 +423,7 @@ export const AssistantPage: React.FC = () => {
                   {/* Timestamp */}
                   <div
                     className={`text-[9px] mt-2 text-right ${
-                      isUser ? 'text-indigo-200' : 'text-zinc-400 dark:text-zinc-500'
+                      isUser ? 'text-orange-200' : 'text-zinc-400 dark:text-zinc-500'
                     }`}
                   >
                     {msg.timestamp}
@@ -436,17 +436,17 @@ export const AssistantPage: React.FC = () => {
           {/* Loading indicator */}
           {isLoading && (
             <div className="flex gap-3 justify-start items-center">
-              <div className="h-7 w-7 rounded-lg bg-indigo-600 text-white flex items-center justify-center shrink-0 shadow-2xs">
+              <div className="h-7 w-7 rounded-lg bg-orange-600 text-white flex items-center justify-center shrink-0 shadow-2xs">
                 <Sparkles className="h-3.5 w-3.5 animate-pulse" />
               </div>
               <div className="rounded-2xl px-4 py-2.5 bg-zinc-50 dark:bg-zinc-800/80 border border-zinc-200/70 dark:border-zinc-700/60 text-xs text-zinc-500 dark:text-zinc-400 flex items-center gap-2">
-                <span className="inline-block h-2 w-2 rounded-full bg-indigo-500 animate-bounce" />
+                <span className="inline-block h-2 w-2 rounded-full bg-orange-500 animate-bounce" />
                 <span
-                  className="inline-block h-2 w-2 rounded-full bg-indigo-500 animate-bounce"
+                  className="inline-block h-2 w-2 rounded-full bg-orange-500 animate-bounce"
                   style={{ animationDelay: '0.15s' }}
                 />
                 <span
-                  className="inline-block h-2 w-2 rounded-full bg-indigo-500 animate-bounce"
+                  className="inline-block h-2 w-2 rounded-full bg-orange-500 animate-bounce"
                   style={{ animationDelay: '0.3s' }}
                 />
                 <span className="ml-1 text-[11px]">Synthesizing workspace insights...</span>
@@ -469,9 +469,9 @@ export const AssistantPage: React.FC = () => {
                   type="button"
                   disabled={isLoading}
                   onClick={() => handleSendMessage(starter.label)}
-                  className="inline-flex items-center gap-1.5 px-2.5 py-1 rounded-lg text-[11px] font-medium bg-white dark:bg-zinc-900 border border-zinc-200 dark:border-zinc-800 text-zinc-700 dark:text-zinc-300 hover:border-indigo-400 dark:hover:border-indigo-500 hover:bg-indigo-50/40 dark:hover:bg-indigo-950/20 hover:text-indigo-600 dark:hover:text-indigo-400 transition-all duration-150 shrink-0 shadow-2xs disabled:opacity-50"
+                  className="inline-flex items-center gap-1.5 px-2.5 py-1 rounded-lg text-[11px] font-medium bg-white dark:bg-zinc-900 border border-zinc-200 dark:border-zinc-800 text-zinc-700 dark:text-zinc-300 hover:border-orange-400 dark:hover:border-orange-500 hover:bg-orange-50/40 dark:hover:bg-orange-950/20 hover:text-orange-600 dark:hover:text-orange-400 transition-all duration-150 shrink-0 shadow-2xs disabled:opacity-50"
                 >
-                  <Icon className="h-3 w-3 text-indigo-500 shrink-0" />
+                  <Icon className="h-3 w-3 text-orange-500 shrink-0" />
                   <span>{starter.label}</span>
                 </button>
               );
@@ -492,7 +492,7 @@ export const AssistantPage: React.FC = () => {
               value={inputPrompt}
               onChange={(e) => setInputPrompt(e.target.value)}
               disabled={isLoading}
-              className="flex-1 h-10 rounded-xl px-3.5 text-xs bg-white dark:bg-zinc-900 border border-zinc-200/90 dark:border-zinc-800 text-zinc-900 dark:text-zinc-100 placeholder:text-zinc-400 focus:outline-none focus:border-indigo-500 dark:focus:border-indigo-500 shadow-2xs"
+              className="flex-1 h-10 rounded-xl px-3.5 text-xs bg-white dark:bg-zinc-900 border border-zinc-200/90 dark:border-zinc-800 text-zinc-900 dark:text-zinc-100 placeholder:text-zinc-400 focus:outline-none focus:border-orange-500 dark:focus:border-orange-500 shadow-2xs"
             />
             <Button
               type="submit"

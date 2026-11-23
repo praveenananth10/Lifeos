@@ -7,7 +7,7 @@ import { Button } from '../ui/Button';
 
 export const Navbar: React.FC = () => {
   return (
-    <header className="sticky top-0 z-40 w-full border-b border-zinc-200/80 dark:border-zinc-800/80 bg-white/80 dark:bg-zinc-950/80 backdrop-blur-md">
+    <header className="sticky top-0 z-40 w-full border-b border-zinc-200/80 dark:border-[#27272A] bg-white/80 dark:bg-[#09090B]/80 backdrop-blur-md">
       <div className="max-w-7xl mx-auto flex h-14 items-center justify-between px-4 sm:px-6">
         {/* Brand identity */}
         <Link to="/" className="flex items-center gap-3 group">
@@ -20,7 +20,7 @@ export const Navbar: React.FC = () => {
             <span className="font-semibold text-base tracking-tight text-zinc-900 dark:text-zinc-100">
               LifeOS
             </span>
-            <Badge variant="indigo" className="hidden sm:inline-flex text-[10px] font-medium">
+            <Badge variant="orange" className="hidden sm:inline-flex text-[10px] font-medium">
               Design System Spec
             </Badge>
           </div>

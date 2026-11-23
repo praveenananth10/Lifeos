@@ -67,7 +67,7 @@ const CreateHabitForm: React.FC<CreateHabitFormProps> = ({ onSave, onClose }) =>
         <select
           value={category}
           onChange={(e) => setCategory(e.target.value)}
-          className="w-full h-9 rounded-lg px-3 text-xs bg-white dark:bg-zinc-900 border border-zinc-200/90 dark:border-zinc-800 text-zinc-900 dark:text-zinc-100 focus:outline-none focus:border-indigo-500"
+          className="w-full h-9 rounded-lg px-3 text-xs bg-white dark:bg-zinc-900 border border-zinc-200/90 dark:border-zinc-800 text-zinc-900 dark:text-zinc-100 focus:outline-none focus:border-orange-500"
         >
           {HABIT_CATEGORIES.map((cat) => (
             <option key={cat} value={cat}>
@@ -82,7 +82,7 @@ const CreateHabitForm: React.FC<CreateHabitFormProps> = ({ onSave, onClose }) =>
           <label className="block text-xs font-medium text-zinc-700 dark:text-zinc-300">
             Weekly Frequency Target
           </label>
-          <span className="font-mono text-xs font-bold text-indigo-600 dark:text-indigo-400">
+          <span className="font-mono text-xs font-bold text-orange-600 dark:text-orange-400">
             {targetDaysPerWeek} days / week
           </span>
         </div>

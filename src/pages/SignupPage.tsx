@@ -123,13 +123,13 @@ export const SignupPage: React.FC = () => {
       <AuthLayout
         title="Check your email"
         description="We've sent a verification link to confirm your LifeOS account."
-        icon={<MailCheck className="h-5 w-5 text-indigo-600 dark:text-indigo-400" />}
+        icon={<MailCheck className="h-5 w-5 text-orange-600 dark:text-orange-400" />}
         footerContent={
           <div className="flex items-center gap-1">
             <ArrowLeft className="h-3.5 w-3.5" />
             <Link
               to="/login"
-              className="text-indigo-600 dark:text-indigo-400 font-semibold hover:underline"
+              className="text-orange-600 dark:text-orange-400 font-semibold hover:underline"
             >
               Go to Sign In
             </Link>
@@ -137,7 +137,7 @@ export const SignupPage: React.FC = () => {
         }
       >
         <div className="space-y-4 text-center">
-          <div className="p-4 rounded-xl border border-indigo-200/80 dark:border-indigo-900/60 bg-indigo-50/40 dark:bg-indigo-950/20 space-y-2">
+          <div className="p-4 rounded-xl border border-orange-200/80 dark:border-orange-900/60 bg-orange-50/40 dark:bg-orange-950/20 space-y-2">
             <p className="text-xs text-zinc-600 dark:text-zinc-400">
               A verification link was dispatched to:
             </p>
@@ -171,7 +171,7 @@ export const SignupPage: React.FC = () => {
           Already have an account?{' '}
           <Link
             to="/login"
-            className="text-indigo-600 dark:text-indigo-400 font-semibold hover:underline"
+            className="text-orange-600 dark:text-orange-400 font-semibold hover:underline"
           >
             Log in
           </Link>
@@ -236,7 +236,7 @@ export const SignupPage: React.FC = () => {
               className={`w-full h-9 rounded-lg pl-9 pr-10 text-sm transition-all duration-150 bg-white dark:bg-zinc-900 text-zinc-900 dark:text-zinc-100 placeholder:text-zinc-400 dark:placeholder:text-zinc-500 border ${
                 errors.password
                   ? 'border-rose-500 focus:border-rose-500 focus:ring-2 focus:ring-rose-500/20'
-                  : 'border-zinc-200/90 dark:border-zinc-800 focus:outline-none focus:border-indigo-500 dark:focus:border-indigo-400 focus:ring-2 focus:ring-indigo-500/20 dark:focus:ring-indigo-400/20'
+                  : 'border-zinc-200/90 dark:border-zinc-800 focus:outline-none focus:border-orange-500 dark:focus:border-orange-400 focus:ring-2 focus:ring-orange-500/20 dark:focus:ring-orange-400/20'
               }`}
               autoComplete="new-password"
             />
@@ -272,7 +272,7 @@ export const SignupPage: React.FC = () => {
               className={`w-full h-9 rounded-lg pl-9 pr-10 text-sm transition-all duration-150 bg-white dark:bg-zinc-900 text-zinc-900 dark:text-zinc-100 placeholder:text-zinc-400 dark:placeholder:text-zinc-500 border ${
                 errors.confirmPassword
                   ? 'border-rose-500 focus:border-rose-500 focus:ring-2 focus:ring-rose-500/20'
-                  : 'border-zinc-200/90 dark:border-zinc-800 focus:outline-none focus:border-indigo-500 dark:focus:border-indigo-400 focus:ring-2 focus:ring-indigo-500/20 dark:focus:ring-indigo-400/20'
+                  : 'border-zinc-200/90 dark:border-zinc-800 focus:outline-none focus:border-orange-500 dark:focus:border-orange-400 focus:ring-2 focus:ring-orange-500/20 dark:focus:ring-orange-400/20'
               }`}
               autoComplete="new-password"
             />
@@ -327,7 +327,7 @@ export const SignupPage: React.FC = () => {
                 setAgreeTerms(e.target.checked);
                 if (errors.terms) setErrors((prev) => ({ ...prev, terms: undefined }));
               }}
-              className="mt-0.5 rounded border-zinc-300 dark:border-zinc-700 text-indigo-600 focus:ring-indigo-500/30 dark:bg-zinc-900 h-4 w-4"
+              className="mt-0.5 rounded border-zinc-300 dark:border-zinc-700 text-orange-600 focus:ring-orange-500/30 dark:bg-zinc-900 h-4 w-4"
             />
             <span>
               I agree to the <span className="text-zinc-900 dark:text-zinc-200 underline">Terms of Service</span> and{' '}

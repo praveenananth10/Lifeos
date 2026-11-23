@@ -90,7 +90,7 @@ const CreateGoalForm: React.FC<CreateGoalFormProps> = ({ todayDate, onSave, onCl
           rows={2}
           value={description}
           onChange={(e) => setDescription(e.target.value)}
-          className="w-full rounded-lg p-3 text-xs bg-white dark:bg-zinc-900 border border-zinc-200/90 dark:border-zinc-800 text-zinc-900 dark:text-zinc-100 placeholder:text-zinc-400 dark:placeholder:text-zinc-500 focus:outline-none focus:border-indigo-500 resize-none"
+          className="w-full rounded-lg p-3 text-xs bg-white dark:bg-zinc-900 border border-zinc-200/90 dark:border-zinc-800 text-zinc-900 dark:text-zinc-100 placeholder:text-zinc-400 dark:placeholder:text-zinc-500 focus:outline-none focus:border-orange-500 resize-none"
         />
       </div>
 
@@ -105,7 +105,7 @@ const CreateGoalForm: React.FC<CreateGoalFormProps> = ({ todayDate, onSave, onCl
             onClick={() => setHorizon('short-term')}
             className={`p-2.5 rounded-lg border text-left transition-all cursor-pointer ${
               horizon === 'short-term'
-                ? 'bg-indigo-50 dark:bg-indigo-950/40 border-indigo-500 text-indigo-700 dark:text-indigo-300'
+                ? 'bg-orange-50 dark:bg-orange-950/40 border-orange-500 text-orange-700 dark:text-orange-300'
                 : 'bg-white dark:bg-zinc-900 border-zinc-200 dark:border-zinc-800 text-zinc-600 dark:text-zinc-400'
             }`}
           >
@@ -137,28 +137,28 @@ const CreateGoalForm: React.FC<CreateGoalFormProps> = ({ todayDate, onSave, onCl
             <button
               type="button"
               onClick={() => setOffsetDate(1)}
-              className="text-[10px] text-zinc-500 hover:text-indigo-600 px-1.5 py-0.5 rounded bg-zinc-100 dark:bg-zinc-800"
+              className="text-[10px] text-zinc-500 hover:text-orange-600 px-1.5 py-0.5 rounded bg-zinc-100 dark:bg-zinc-800"
             >
               +1M
             </button>
             <button
               type="button"
               onClick={() => setOffsetDate(3)}
-              className="text-[10px] text-zinc-500 hover:text-indigo-600 px-1.5 py-0.5 rounded bg-zinc-100 dark:bg-zinc-800"
+              className="text-[10px] text-zinc-500 hover:text-orange-600 px-1.5 py-0.5 rounded bg-zinc-100 dark:bg-zinc-800"
             >
               +3M
             </button>
             <button
               type="button"
               onClick={() => setOffsetDate(6)}
-              className="text-[10px] text-zinc-500 hover:text-indigo-600 px-1.5 py-0.5 rounded bg-zinc-100 dark:bg-zinc-800"
+              className="text-[10px] text-zinc-500 hover:text-orange-600 px-1.5 py-0.5 rounded bg-zinc-100 dark:bg-zinc-800"
             >
               +6M
             </button>
             <button
               type="button"
               onClick={() => setOffsetDate(12)}
-              className="text-[10px] text-zinc-500 hover:text-indigo-600 px-1.5 py-0.5 rounded bg-zinc-100 dark:bg-zinc-800"
+              className="text-[10px] text-zinc-500 hover:text-orange-600 px-1.5 py-0.5 rounded bg-zinc-100 dark:bg-zinc-800"
             >
               +1Y
             </button>
@@ -168,7 +168,7 @@ const CreateGoalForm: React.FC<CreateGoalFormProps> = ({ todayDate, onSave, onCl
           type="date"
           value={targetDate}
           onChange={(e) => setTargetDate(e.target.value)}
-          className="w-full h-9 rounded-lg px-3 text-xs bg-white dark:bg-zinc-900 border border-zinc-200/90 dark:border-zinc-800 text-zinc-900 dark:text-zinc-100 focus:outline-none focus:border-indigo-500"
+          className="w-full h-9 rounded-lg px-3 text-xs bg-white dark:bg-zinc-900 border border-zinc-200/90 dark:border-zinc-800 text-zinc-900 dark:text-zinc-100 focus:outline-none focus:border-orange-500"
         />
       </div>
 
@@ -190,7 +190,7 @@ const CreateGoalForm: React.FC<CreateGoalFormProps> = ({ todayDate, onSave, onCl
                 handleAddMilestone();
               }
             }}
-            className="flex-1 h-8 rounded-lg px-3 text-xs bg-white dark:bg-zinc-900 border border-zinc-200/90 dark:border-zinc-800 text-zinc-900 dark:text-zinc-100 placeholder:text-zinc-400 focus:outline-none focus:border-indigo-500"
+            className="flex-1 h-8 rounded-lg px-3 text-xs bg-white dark:bg-zinc-900 border border-zinc-200/90 dark:border-zinc-800 text-zinc-900 dark:text-zinc-100 placeholder:text-zinc-400 focus:outline-none focus:border-orange-500"
           />
           <Button
             type="button"
@@ -249,7 +249,7 @@ export const CreateGoalModal: React.FC<CreateGoalModalProps> = ({
       onClose={onClose}
       title={
         <div className="flex items-center gap-2">
-          <Target className="h-4 w-4 text-indigo-600 dark:text-indigo-400" />
+          <Target className="h-4 w-4 text-orange-600 dark:text-orange-400" />
           <span>New Strategic Goal</span>
         </div>
       }

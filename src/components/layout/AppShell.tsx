@@ -27,7 +27,7 @@ export const AppShell: React.FC<AppShellProps> = ({ children }) => {
   }, []);
 
   return (
-    <div className="min-h-screen flex bg-zinc-50 dark:bg-zinc-950 text-zinc-900 dark:text-zinc-100 transition-colors duration-200">
+    <div className="min-h-screen flex bg-zinc-50 dark:bg-[#09090B] text-zinc-900 dark:text-zinc-100 transition-colors duration-200">
       {/* Desktop Fixed Left Sidebar */}
       <div className="hidden md:flex md:w-64 md:shrink-0 sticky top-0 h-screen">
         <Sidebar className="h-full w-full" />
@@ -42,7 +42,7 @@ export const AppShell: React.FC<AppShellProps> = ({ children }) => {
             onClick={() => setMobileMenuOpen(false)}
           />
           {/* Drawer container */}
-          <div className="relative flex w-72 max-w-[85vw] flex-col bg-white dark:bg-zinc-950 shadow-xl z-10">
+          <div className="relative flex w-72 max-w-[85vw] flex-col bg-white dark:bg-[#121215] shadow-xl z-10">
             <Sidebar
               className="h-full w-full"
               onCloseMobile={() => setMobileMenuOpen(false)}
@@ -82,7 +82,7 @@ export const AppShell: React.FC<AppShellProps> = ({ children }) => {
           {children}
         </main>
 
-        <footer className="border-t border-zinc-200/60 dark:border-zinc-800/60 py-4 px-6 text-center text-xs text-zinc-400 dark:text-zinc-500">
+        <footer className="border-t border-zinc-200/60 dark:border-[#27272A] py-4 px-6 text-center text-xs text-zinc-400 dark:text-zinc-500">
           <div className="max-w-7xl mx-auto flex flex-col sm:flex-row items-center justify-between gap-2 text-[11px]">
             <span>LifeOS Workspace &copy; 2026 • Organise Your Life. Focus on What Matters.</span>
             <span>Centralized Live Store Active</span>

@@ -60,7 +60,7 @@ export const GoalCard: React.FC<GoalCardProps> = ({
       <div className="flex items-start justify-between gap-3">
         <div className="flex items-center gap-2 flex-wrap">
           <Badge
-            variant={goal.horizon === 'short-term' ? 'indigo' : 'success'}
+            variant={goal.horizon === 'short-term' ? 'orange' : 'success'}
             className="text-[10px] uppercase tracking-wider"
           >
             {goal.horizon}
@@ -104,7 +104,7 @@ export const GoalCard: React.FC<GoalCardProps> = ({
       <div className="space-y-1.5 pt-1">
         <div className="flex items-center justify-between text-xs">
           <span className="text-zinc-500 dark:text-zinc-400 font-medium">Progress</span>
-          <span className="font-mono font-bold text-indigo-600 dark:text-indigo-400">
+          <span className="font-mono font-bold text-orange-600 dark:text-orange-400">
             {percent}%
           </span>
         </div>
@@ -112,7 +112,7 @@ export const GoalCard: React.FC<GoalCardProps> = ({
           <div
             className={cn(
               'h-full rounded-full transition-all duration-300',
-              isCompleted ? 'bg-emerald-500' : 'bg-indigo-600 dark:bg-indigo-500'
+              isCompleted ? 'bg-emerald-500' : 'bg-orange-600 dark:bg-orange-500'
             )}
             style={{ width: `${percent}%` }}
           />
@@ -130,7 +130,7 @@ export const GoalCard: React.FC<GoalCardProps> = ({
             <button
               type="button"
               onClick={() => setIsAddingMilestone(true)}
-              className="text-[11px] font-medium text-indigo-600 dark:text-indigo-400 hover:text-indigo-700 flex items-center gap-0.5 cursor-pointer"
+              className="text-[11px] font-medium text-orange-600 dark:text-orange-400 hover:text-orange-700 flex items-center gap-0.5 cursor-pointer"
             >
               <Plus className="h-3 w-3" /> Add milestone
             </button>
@@ -158,7 +158,7 @@ export const GoalCard: React.FC<GoalCardProps> = ({
                     'h-4 w-4 rounded flex items-center justify-center shrink-0 transition-colors',
                     m.completed
                       ? 'bg-emerald-500 text-white'
-                      : 'border border-zinc-300 dark:border-zinc-600 hover:border-indigo-500'
+                      : 'border border-zinc-300 dark:border-zinc-600 hover:border-orange-500'
                   )}
                 >
                   {m.completed && <Check className="h-3 w-3 stroke-[3]" />}
@@ -195,7 +195,7 @@ export const GoalCard: React.FC<GoalCardProps> = ({
                 value={newMilestoneText}
                 onChange={(e) => setNewMilestoneText(e.target.value)}
                 autoFocus
-                className="flex-1 h-8 rounded-lg px-2.5 text-xs bg-white dark:bg-zinc-900 border border-zinc-200/90 dark:border-zinc-800 text-zinc-900 dark:text-zinc-100 placeholder:text-zinc-400 focus:outline-none focus:border-indigo-500"
+                className="flex-1 h-8 rounded-lg px-2.5 text-xs bg-white dark:bg-zinc-900 border border-zinc-200/90 dark:border-zinc-800 text-zinc-900 dark:text-zinc-100 placeholder:text-zinc-400 focus:outline-none focus:border-orange-500"
               />
               <Button type="submit" variant="primary" size="sm" className="h-8 px-2.5 text-xs">
                 Add
@@ -220,7 +220,7 @@ export const GoalCard: React.FC<GoalCardProps> = ({
       {/* Target Date Footer */}
       <div className="pt-2 border-t border-zinc-100 dark:border-zinc-800/80 flex items-center justify-between text-[11px] text-zinc-400 font-mono">
         <span>Target: {goal.targetDate}</span>
-        <span className="flex items-center gap-0.5 text-indigo-600 dark:text-indigo-400 font-medium">
+        <span className="flex items-center gap-0.5 text-orange-600 dark:text-orange-400 font-medium">
           OKRs <ChevronRight className="h-3 w-3" />
         </span>
       </div>

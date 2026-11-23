@@ -53,7 +53,7 @@ export const DayView: React.FC<DayViewProps> = ({
                   {formattedSelectedDate}
                 </CardTitle>
                 {isToday && (
-                  <Badge variant="indigo" className="text-[10px]">
+                  <Badge variant="orange" className="text-[10px]">
                     Today
                   </Badge>
                 )}
@@ -102,7 +102,7 @@ export const DayView: React.FC<DayViewProps> = ({
                 >
                   <div className="space-y-1">
                     <div className="flex items-center gap-2">
-                      <span className="font-mono text-xs font-bold text-indigo-600 dark:text-indigo-400">
+                      <span className="font-mono text-xs font-bold text-orange-600 dark:text-orange-400">
                         {evt.startTime} – {evt.endTime}
                       </span>
                       <Badge
@@ -111,7 +111,7 @@ export const DayView: React.FC<DayViewProps> = ({
                             ? 'success'
                             : evt.type === 'deadline'
                             ? 'danger'
-                            : 'indigo'
+                            : 'orange'
                         }
                         className="text-[10px] capitalize"
                       >

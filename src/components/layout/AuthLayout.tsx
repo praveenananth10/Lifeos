@@ -22,7 +22,7 @@ export const AuthLayout: React.FC<AuthLayoutProps> = ({
   footerContent,
 }) => {
   return (
-    <div className="min-h-screen flex flex-col justify-between bg-zinc-50 dark:bg-zinc-950 p-4 sm:p-6 transition-colors duration-200 selection:bg-indigo-600 selection:text-white dark:selection:bg-indigo-500">
+    <div className="min-h-screen flex flex-col justify-between bg-zinc-50 dark:bg-[#09090B] p-4 sm:p-6 transition-colors duration-200 selection:bg-orange-600 selection:text-white dark:selection:bg-orange-500">
       {/* Top Bar */}
       <header className="max-w-5xl mx-auto w-full flex items-center justify-between py-2">
         <Link
@@ -54,7 +54,7 @@ export const AuthLayout: React.FC<AuthLayoutProps> = ({
         <Card variant="default" className="shadow-sm border-zinc-200/90 dark:border-zinc-800">
           <CardHeader className="text-center pb-4 pt-6 px-6 sm:px-8">
             {icon && (
-              <div className="mx-auto mb-3 flex h-11 w-11 items-center justify-center rounded-xl bg-zinc-100 dark:bg-zinc-800 text-indigo-600 dark:text-indigo-400 border border-zinc-200/70 dark:border-zinc-700/60 shadow-2xs">
+              <div className="mx-auto mb-3 flex h-11 w-11 items-center justify-center rounded-xl bg-zinc-100 dark:bg-[#121215] text-orange-600 dark:text-orange-400 border border-zinc-200/70 dark:border-[#27272A] shadow-2xs">
                 {icon}
               </div>
             )}
@@ -71,7 +71,7 @@ export const AuthLayout: React.FC<AuthLayoutProps> = ({
 
             <div className="pt-2 flex justify-center">
               <Badge
-                variant={isSupabaseConfigured ? 'success' : 'indigo'}
+                variant={isSupabaseConfigured ? 'success' : 'orange'}
                 className="text-[10px] font-mono gap-1"
               >
                 {isSupabaseConfigured ? (
@@ -118,9 +118,9 @@ export const AuthLayout: React.FC<AuthLayoutProps> = ({
       </main>
 
       {/* Footer */}
-      <footer className="text-center text-xs text-zinc-400 dark:text-zinc-500 py-4 max-w-5xl mx-auto w-full flex flex-col sm:flex-row items-center justify-between gap-2 border-t border-zinc-200/40 dark:border-zinc-800/40">
+      <footer className="text-center text-xs text-zinc-400 dark:text-zinc-500 py-4 max-w-5xl mx-auto w-full flex flex-col sm:flex-row items-center justify-between gap-2 border-t border-zinc-200/40 dark:border-[#27272A]">
         <span>LifeOS &copy; 2026 • Organise Your Life. Focus on What Matters.</span>
-        <span className="text-[11px]">Linear Slate &amp; Indigo Architecture</span>
+        <span className="text-[11px]">Sleek Orange &amp; Black Architecture</span>
       </footer>
     </div>
   );

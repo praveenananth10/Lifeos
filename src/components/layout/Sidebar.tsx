@@ -45,7 +45,7 @@ export const Sidebar: React.FC<SidebarProps> = ({ className, onCloseMobile }) =>
       label: 'Tasks', 
       to: '/tasks', 
       badge: pendingTasksCount > 0 ? `${pendingTasksCount}` : undefined,
-      badgeColor: 'bg-indigo-100 text-indigo-700 dark:bg-indigo-950/80 dark:text-indigo-300'
+      badgeColor: 'bg-orange-100 text-orange-700 dark:bg-orange-950/80 dark:text-orange-300'
     },
     { icon: Calendar, label: 'Smart Calendar', to: '/calendar' },
     { 
@@ -67,7 +67,7 @@ export const Sidebar: React.FC<SidebarProps> = ({ className, onCloseMobile }) =>
   return (
     <aside
       className={cn(
-        'w-64 border-r border-zinc-200/80 dark:border-zinc-800/80 bg-zinc-50/50 dark:bg-zinc-950/70 flex flex-col justify-between h-full select-none transition-colors duration-200',
+        'w-64 border-r border-zinc-200/80 dark:border-[#27272A] bg-zinc-50/50 dark:bg-[#121215] flex flex-col justify-between h-full select-none transition-colors duration-200',
         className
       )}
     >
@@ -87,14 +87,14 @@ export const Sidebar: React.FC<SidebarProps> = ({ className, onCloseMobile }) =>
                 className="h-8 w-8 rounded-lg object-cover shadow-2xs group-hover:scale-105 transition-transform"
               />
               <span className="absolute -top-0.5 -right-0.5 flex h-2 w-2">
-                <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-indigo-400 opacity-75" />
-                <span className="relative inline-flex rounded-full h-2 w-2 bg-indigo-600 dark:bg-indigo-400" />
+                <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-amber-400 opacity-75" />
+                <span className="relative inline-flex rounded-full h-2 w-2 bg-orange-500" />
               </span>
             </div>
             <div className="flex flex-col">
               <span className="font-semibold text-sm tracking-tight text-zinc-900 dark:text-zinc-100 flex items-center gap-1.5">
                 LifeOS
-                <span className="text-[10px] font-medium text-indigo-600 dark:text-indigo-400 bg-indigo-50 dark:bg-indigo-950/60 px-1 rounded border border-indigo-200/50 dark:border-indigo-800/40">
+                <span className="text-[10px] font-medium text-orange-600 dark:text-orange-400 bg-orange-50 dark:bg-orange-950/60 px-1 rounded border border-orange-200/50 dark:border-orange-800/40">
                   v1.0
                 </span>
               </span>
@@ -131,7 +131,7 @@ export const Sidebar: React.FC<SidebarProps> = ({ className, onCloseMobile }) =>
                     cn(
                       'flex items-center justify-between px-2.5 py-1.5 rounded-lg text-xs font-medium transition-all duration-150',
                       isActive
-                        ? 'bg-indigo-50 text-indigo-700 dark:bg-indigo-950/60 dark:text-indigo-300 font-semibold shadow-2xs'
+                        ? 'bg-orange-50 text-orange-700 dark:bg-orange-950/60 dark:text-orange-300 font-semibold shadow-2xs'
                         : 'text-zinc-600 hover:text-zinc-900 hover:bg-zinc-100/80 dark:text-zinc-400 dark:hover:text-zinc-200 dark:hover:bg-zinc-900/60'
                     )
                   }
@@ -173,7 +173,7 @@ export const Sidebar: React.FC<SidebarProps> = ({ className, onCloseMobile }) =>
                     cn(
                       'flex items-center justify-between px-2.5 py-1.5 rounded-lg text-xs font-medium transition-all duration-150',
                       isActive
-                        ? 'bg-indigo-50 text-indigo-700 dark:bg-indigo-950/60 dark:text-indigo-300 font-semibold shadow-2xs'
+                        ? 'bg-orange-50 text-orange-700 dark:bg-orange-950/60 dark:text-orange-300 font-semibold shadow-2xs'
                         : 'text-zinc-600 hover:text-zinc-900 hover:bg-zinc-100/80 dark:text-zinc-400 dark:hover:text-zinc-200 dark:hover:bg-zinc-900/60'
                     )
                   }
@@ -202,16 +202,16 @@ export const Sidebar: React.FC<SidebarProps> = ({ className, onCloseMobile }) =>
                 cn(
                   'flex items-center justify-between px-2.5 py-1.5 rounded-lg text-xs font-medium transition-all duration-150',
                   isActive
-                    ? 'bg-indigo-50 text-indigo-700 dark:bg-indigo-950/60 dark:text-indigo-300 font-semibold shadow-2xs'
+                    ? 'bg-orange-50 text-orange-700 dark:bg-orange-950/60 dark:text-orange-300 font-semibold shadow-2xs'
                     : 'text-zinc-600 hover:text-zinc-900 hover:bg-zinc-100/80 dark:text-zinc-400 dark:hover:text-zinc-200 dark:hover:bg-zinc-900/60'
                 )
               }
             >
               <div className="flex items-center gap-2.5">
-                <Sparkles className="h-4 w-4 text-indigo-500" />
+                <Sparkles className="h-4 w-4 text-orange-500" />
                 <span>AI Assistant</span>
               </div>
-              <Badge variant="indigo" className="text-[9px] px-1.5 py-0 font-medium">
+              <Badge variant="orange" className="text-[9px] px-1.5 py-0 font-medium">
                 Coach
               </Badge>
             </NavLink>
@@ -224,7 +224,7 @@ export const Sidebar: React.FC<SidebarProps> = ({ className, onCloseMobile }) =>
                 cn(
                   'flex items-center justify-between px-2.5 py-1.5 rounded-lg text-xs font-medium transition-all duration-150',
                   isActive
-                    ? 'bg-indigo-50 text-indigo-700 dark:bg-indigo-950/60 dark:text-indigo-300 font-semibold shadow-2xs'
+                    ? 'bg-orange-50 text-orange-700 dark:bg-orange-950/60 dark:text-orange-300 font-semibold shadow-2xs'
                     : 'text-zinc-600 hover:text-zinc-900 hover:bg-zinc-100/80 dark:text-zinc-400 dark:hover:text-zinc-200 dark:hover:bg-zinc-900/60'
                 )
               }
@@ -239,10 +239,10 @@ export const Sidebar: React.FC<SidebarProps> = ({ className, onCloseMobile }) =>
       </div>
 
       {/* Bottom User Profile Card */}
-      <div className="p-3 border-t border-zinc-200/80 dark:border-zinc-800/80 bg-white/40 dark:bg-zinc-950/40">
-        <div className="flex items-center justify-between p-1.5 rounded-xl border border-zinc-200/70 dark:border-zinc-800/80 bg-white dark:bg-zinc-900 shadow-2xs">
+      <div className="p-3 border-t border-zinc-200/80 dark:border-[#27272A] bg-white/40 dark:bg-[#121215]/40">
+        <div className="flex items-center justify-between p-1.5 rounded-xl border border-zinc-200/70 dark:border-[#27272A] bg-white dark:bg-[#18181b] shadow-2xs">
           <div className="flex items-center gap-2.5 overflow-hidden">
-            <div className="h-8 w-8 rounded-lg bg-indigo-600 text-white flex items-center justify-center font-bold text-xs shrink-0 shadow-xs">
+            <div className="h-8 w-8 rounded-lg bg-orange-600 text-white flex items-center justify-center font-bold text-xs shrink-0 shadow-xs">
               {displayName.charAt(0).toUpperCase()}
             </div>
             <div className="flex flex-col min-w-0">

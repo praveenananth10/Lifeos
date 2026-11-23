@@ -130,7 +130,7 @@ export const FinancePage: React.FC = () => {
             <span className="text-xs font-medium text-zinc-500 dark:text-zinc-400">
               Net Savings &amp; Velocity
             </span>
-            <div className="h-7 w-7 rounded-lg bg-indigo-50 dark:bg-indigo-950/50 text-indigo-600 dark:text-indigo-400 flex items-center justify-center">
+            <div className="h-7 w-7 rounded-lg bg-orange-50 dark:bg-orange-950/50 text-orange-600 dark:text-orange-400 flex items-center justify-center">
               <PiggyBank className="h-4 w-4" />
             </div>
           </div>
@@ -139,7 +139,7 @@ export const FinancePage: React.FC = () => {
               <span className="text-2xl font-bold font-mono text-zinc-900 dark:text-zinc-50">
                 ${netSavingsThisMonth.toLocaleString(undefined, { minimumFractionDigits: 2, maximumFractionDigits: 2 })}
               </span>
-              <Badge variant="indigo" className="text-[10px]">
+              <Badge variant="orange" className="text-[10px]">
                 {savingsRatePercent}% Rate
               </Badge>
             </div>
